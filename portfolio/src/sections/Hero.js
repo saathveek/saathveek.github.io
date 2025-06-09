@@ -1,4 +1,5 @@
 import React from 'react';
+// import { motion } from 'framer-motion'; //TODO: Add animations
 
 function Hero() {
     return (
