@@ -24,7 +24,6 @@ function App() {
     <div>
       <Hero />
       {showNavbar && <Navbar />}
-      <div className="spacer" style={{ height: '100vh' }}></div> {/* remove once there is enough content */}
       <Intro />
       <XpSkills />
       <Contact />

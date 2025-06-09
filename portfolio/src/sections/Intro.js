@@ -1,13 +1,33 @@
 import React from 'react';
 
 function Intro() {
-    return (
-        <section id="Intro">
-            <div>
-                <h1>Welcome to My Portfolio</h1>
-            </div>
-        </section>
-    );
+  return (
+    <section
+      id="Intro"
+      className="flex flex-col md:flex-row items-center justify-center gap-12 p-8 bg-background"
+    >
+      {/* Left: Text */}
+      <div className="max-w-xl">
+        <h1 className="text-6xl font-semibold text-primary mb-6">
+          About Me
+        </h1>
+        <p className="text-xl text-text mb-6">
+          (This is from ChatGPT, I need to write my own and make it sound less robotic. Maybe 5-6 sentences.)
+          I am a computer engineer and data scientist with a passion for solving complex problems through technology. 
+          My journey in the tech world has been driven by curiosity and a desire to make a positive impact.
+        </p>
+      </div>
+
+      {/* Right: Globe picture */}
+      <div className="w-96 h-[28rem]"> {/* Increased width and height */}
+        <img
+          src="/PFP_Globe_Transparent.png"
+          alt="About Saathveek"
+          className="w-full h-full object-cover rounded-xl border-primary"
+        />
+      </div>
+    </section>
+  );
 }
 
 export default Intro;

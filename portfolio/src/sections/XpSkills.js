@@ -4,7 +4,7 @@ function XpSkills() {
     return (
         <section id="XpSkills">
             <div>
-                <h1>Welcome to My Portfolio</h1>
+                <h1>XpSkills</h1>
             </div>
         </section>
     );
