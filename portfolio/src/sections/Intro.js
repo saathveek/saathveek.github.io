@@ -6,11 +6,15 @@ function Intro() {
       id="Intro"
       className="flex flex-col md:flex-row items-center justify-center gap-12 p-8 bg-background"
     >
-      {/* Left: Text */}
+      {/* Left */}
       <div className="max-w-xl">
+        
+        {/* Header */}
         <h1 className="text-6xl font-semibold text-primary mb-6">
           About Me
         </h1>
+        
+        {/* Description */}
         <p className="text-xl text-text mb-6">
           (This is from ChatGPT, I need to write my own and make it sound less robotic. Maybe 5-6 sentences.)
           I am a computer engineer and data scientist with a passion for solving complex problems through technology. 
@@ -18,8 +22,10 @@ function Intro() {
         </p>
       </div>
 
-      {/* Right: Globe picture */}
-      <div className="w-96 h-[28rem]"> {/* Increased width and height */}
+      {/* Right */}
+      <div className="w-96 h-[28rem]">
+        
+        {/* Profile Picture */}
         <img
           src="/PFP_Globe_Transparent.png"
           alt="About Saathveek"
