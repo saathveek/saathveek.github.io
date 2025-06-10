@@ -8,6 +8,7 @@ function XpSkills() {
             <div className="max-w-xl">
                 <h1 className="text-6xl font-semibold text-primary mb-6">
                     Experience & Skills
+                    Testing auto-deployment 3:35 6/10
                 </h1>
 
                 
