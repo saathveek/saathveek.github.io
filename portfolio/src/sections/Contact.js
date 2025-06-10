@@ -3,7 +3,7 @@ import React from 'react';
 // TODO: Replace with EmailJS or similar service for better email handling
 function Contact() {
     return (
-        <section id="contact" className="py-16 bg-background text-center">
+        <section id="Contact" className="py-16 bg-background text-center">
             <div className="max-w-md mx-auto text-left">
 
                 {/* Header + Description */}

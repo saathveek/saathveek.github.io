@@ -23,14 +23,22 @@ function Hero() {
 
                 {/* CTA Buttons */}
                 <div className="flex justify-center space-x-4">
-                    <button className="bg-background text-primary text-xl px-4 py-2 rounded font-semibold border-2 border-primary
-                                       hover:bg-primary hover:text-background hover:rounded hover:border-2 transition-colors">
-                        Download Resume
-                    </button>
-                    <button className="bg-background text-primary text-xl px-4 py-2 rounded font-semibold border-2 border-primary
-                                       hover:bg-primary hover:text-accent hover:rounded hover:border-2 transition-colors">
+                    <a 
+                        href="/resume.pdf"
+                        target='_blank'
+                        rel="noopener noreferrer"
+                        className="bg-background text-primary text-xl px-4 py-2 rounded font-semibold border-2 border-primary
+                                    hover:bg-primary hover:text-background hover:rounded hover:border-2 transition-colors"
+                    >
+                        View Resume
+                    </a>
+                    <a 
+                        href="/#Contact"
+                        className="bg-background text-primary text-xl px-4 py-2 rounded font-semibold border-2 border-primary
+                                    hover:bg-primary hover:text-accent hover:rounded hover:border-2 transition-colors"         
+                    >
                         Contact Me
-                    </button>
+                    </a>
                 </div>
 
                 {/* Button to Content */}
