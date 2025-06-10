@@ -4,7 +4,7 @@ import React from 'react';
 function Hero() {
     return (
         <section id="Hero" className="min-h-screen flex items-center justify-center p-8 bg-background">
-            <div className="max-w-3xl text-center">
+            <div className="max-w-6xl text-center">
                 
                 {/* Profile Picture */}
                 <img
@@ -14,20 +14,20 @@ function Hero() {
                 />
                 
                 {/* Text */}
-                <h1 className="text-4xl font-bold text-text">
+                <h1 className="text-5xl text-text mb-2">
                     Hello, I'm <span className="text-primary">Saathveek</span>.
                 </h1>
-                <h1 className="text-4xl font-bold text-text">
+                <h1 className="text-5xl text-text mb-8">
                     I'm a computer&nbsp;engineer and data&nbsp;scientist.
                 </h1>
 
                 {/* CTA Buttons */}
-                <div className="mt-6 flex justify-center space-x-4">
-                    <button className="bg-background text-primary px-4 py-2 rounded font-semibold border-2 border-primary
+                <div className="flex justify-center space-x-4">
+                    <button className="bg-background text-primary text-xl px-4 py-2 rounded font-semibold border-2 border-primary
                                        hover:bg-primary hover:text-background hover:rounded hover:border-2 transition-colors">
                         Download Resume
                     </button>
-                    <button className="bg-background text-primary px-4 py-2 rounded font-semibold border-2 border-primary
+                    <button className="bg-background text-primary text-xl px-4 py-2 rounded font-semibold border-2 border-primary
                                        hover:bg-primary hover:text-accent hover:rounded hover:border-2 transition-colors">
                         Contact Me
                     </button>
