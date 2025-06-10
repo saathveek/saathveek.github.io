@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - gh-pages
 
 jobs:
   build-and-deploy:
@@ -31,3 +30,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
         cname: saathveek.com
+        publish_branch: gh-pages
