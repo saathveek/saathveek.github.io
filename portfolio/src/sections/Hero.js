@@ -8,7 +8,7 @@ function Hero() {
                 
                 {/* Profile Picture */}
                 <img
-                    src="/PFP_Front_Transparent.png"
+                    src="/saathveek_head.png"
                     alt="Saathveek"
                     className="rounded-full w-48 h-48 mx-auto mb-6 border-4 border-primary"
                 />

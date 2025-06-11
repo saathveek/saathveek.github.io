@@ -27,8 +27,8 @@ function Intro() {
         
         {/* Profile Picture */}
         <img
-          src="/PFP_Globe_Transparent.png"
-          alt="About Saathveek"
+          src="/saathveek_globe.png"
+          alt="Saathveek standing with his arm around a globe"
           className="w-full h-full object-cover rounded-xl border-primary"
         />
       </div>
