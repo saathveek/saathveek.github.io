@@ -8,30 +8,29 @@ function Intro() {
     >
       {/* Left */}
       <div className="max-w-xl">
-        
+
         {/* Header */}
         <h1 className="text-6xl font-semibold text-primary mb-6">
           About Me
         </h1>
-        
+
         {/* Description */}
         <p className="text-xl text-text mb-6">
           (This is from ChatGPT, I need to write my own and make it sound less robotic. Maybe 5-6 sentences.)
-          I am a computer engineer and data scientist with a passion for solving complex problems through technology. 
+          I am a computer engineer and data scientist with a passion for solving complex problems through technology.
           My journey in the tech world has been driven by curiosity and a desire to make a positive impact.
         </p>
       </div>
 
       {/* Right */}
-      <div className="w-96 h-[28rem]">
-        
-        {/* Profile Picture */}
+      <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-[28rem] flex-shrink-0">
         <img
           src="/saathveek_globe.png"
           alt="Saathveek standing with his arm around a globe"
-          className="w-full h-full object-cover rounded-xl border-primary"
+          className="w-full h-full object-contain rounded-xl border-primary"
         />
       </div>
+
     </section>
   );
 }
