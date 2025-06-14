@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Hero from './sections/Hero';
 import Navbar from './sections/Navbar';
-import Intro from './sections/Intro';
-import XpSkills from './sections/XpSkills';
+import About from './sections/About';
+import Skills from './sections/Skills';
 import Contact from './sections/Contact';
 
 import './App.css';
@@ -24,8 +24,8 @@ function App() {
     <div>
       <Hero />
       {showNavbar && <Navbar />}
-      <Intro />
-      <XpSkills />
+      <About />
+      <Skills />
       <Contact />
     </div>
   );  

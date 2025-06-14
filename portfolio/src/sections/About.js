@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Intro() {
+function About() {
   return (
     <section
-      id="Intro"
+      id="About"
       className="flex flex-col md:flex-row items-center justify-center gap-12 p-8 bg-background"
     >
       {/* Left */}
@@ -15,11 +15,12 @@ function Intro() {
         </h1>
 
         {/* Description */}
-        <p className="text-xl text-text mb-6">
-          (This is from ChatGPT, I need to write my own and make it sound less robotic. Maybe 5-6 sentences.)
-          I am a computer engineer and data scientist with a passion for solving complex problems through technology.
-          My journey in the tech world has been driven by curiosity and a desire to make a positive impact.
-        </p>
+        <div className="space-y-4 text-text text-xl">
+          <p>Hi! I'm Saathveek, a student studying Computer Engineering and Data Science at the University of Illinois Urbana-Champaign.</p>
+          <p>I'm passionate about applying my skills to drive meaningful impact - whether through internships, research, extracurriculars, or my future career.</p>
+          <p>With experience in software development, infrastructure engineering, data analysis, and machine learning, I'm always seeking new challenges and opportunities to grow as an engineer, problem solver, and leader.</p>
+        </div>
+
       </div>
 
       {/* Right */}
@@ -35,4 +36,4 @@ function Intro() {
   );
 }
 
-export default Intro;
+export default About;
