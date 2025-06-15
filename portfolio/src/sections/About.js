@@ -16,9 +16,10 @@ function About() {
 
         {/* Description */}
         <div className="space-y-4 text-text text-xl">
-          <p>Hi! I'm Saathveek, a student studying Computer Engineering and Data Science at the University of Illinois Urbana-Champaign.</p>
-          <p>I'm passionate about applying my skills to drive meaningful impact - whether through internships, research, extracurriculars, or my future career.</p>
-          <p>With experience in software development, infrastructure engineering, data analysis, and machine learning, I'm always seeking new challenges and opportunities to grow as an engineer, problem solver, and leader.</p>
+          <p>Hi! I'm Saathveek, a Computer Engineering and Data Science student at the University of Illinois Urbana-Champaign.</p>
+          <p>I'm passionate about applying my skills in software engineering, data analysis, and machine learning to solve real-world problems and drive lasting, positive change.</p>
+          <p>I'm always looking for new challenges that push me to grow as an engineer, problem solver, and leader.</p>
+          <p>Take a look around, and feel free to reach out. I'd love to connect or collaborate!</p>
         </div>
 
       </div>

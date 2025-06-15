@@ -10,7 +10,7 @@ const experiences = [
         logo: "/logo_bcbs.jpg",
         dateRange: "Since May 2025",
         location: "Chicago, IL",
-        skillsUsed: ["Python", "Git"]
+        skillsUsed: ["Python", "Databricks", "Dynatrace", "Git"]
     },
     {
         companyName: "Mullbry",
@@ -40,7 +40,7 @@ const experiences = [
         logo: "/logo_hfa.png",
         dateRange: "August 2022 to Present",
         location: "Urbana-Champaign, IL",
-        skillsUsed: ["Python"]
+        skillsUsed: ["Python", "Excel"]
     },
 ]
 

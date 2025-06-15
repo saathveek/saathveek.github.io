@@ -1,6 +1,7 @@
 import React from 'react';
-import { SiPython, SiJavascript, SiCplusplus, SiReact, SiTensorflow, SiGit } from 'react-icons/si'; //https://react-icons.github.io/react-icons/icons/si/
+import { SiPython, SiJavascript, SiCplusplus, SiReact, SiTensorflow, SiGit, SiDatabricks, SiDynatrace } from 'react-icons/si'; //https://react-icons.github.io/react-icons/icons/si/
 import { VscAzureDevops } from 'react-icons/vsc';
+import { PiMicrosoftExcelLogo } from 'react-icons/pi';
 
 export const skills = [
     { name: 'Python', icon: SiPython },
@@ -8,8 +9,11 @@ export const skills = [
     { name: 'JavaScript', icon: SiJavascript },
     { name: 'Tensorflow', icon: SiTensorflow },
     { name: 'Azure DevOps', icon: VscAzureDevops },
+    { name: 'Databricks', icon: SiDatabricks },
+    { name: 'Dynatrace', icon: SiDynatrace },
     { name: 'Git', icon: SiGit },
     { name: 'React', icon: SiReact },
+    { name: 'Excel', icon: PiMicrosoftExcelLogo }
 ];
 
 function Skills() {
