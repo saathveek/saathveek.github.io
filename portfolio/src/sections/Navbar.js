@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navbar() {
     return (
-    <nav className="fixed top-0 left-0 w-full bg-background shadow z-50">
+    <nav className="fixed top-0 left-0 w-full bg-background bg-opacity-80 shadow z-50">
         <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
         <span className="font-bold text-xl text-primary">Saathveek Gowrishankar</span>
         <ul className="flex space-x-6">

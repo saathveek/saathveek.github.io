@@ -3,6 +3,7 @@ import Hero from './sections/Hero';
 import Navbar from './sections/Navbar';
 import About from './sections/About';
 import Skills from './sections/Skills';
+import Experience from './sections/Experience';
 import Contact from './sections/Contact';
 
 import './App.css';
@@ -26,6 +27,7 @@ function App() {
       {showNavbar && <Navbar />}
       <About />
       <Skills />
+      <Experience />
       <Contact />
     </div>
   );  

@@ -43,7 +43,7 @@ function Hero() {
 
                 {/* Button to Content */}
                 <a
-                    href="#Intro"
+                    href="#About"
                     className="absolute bottom-10 animate-bounce text-primary hover:text-accent transition"
                     aria-label="Scroll down"
                 >
