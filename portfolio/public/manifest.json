@@ -1,8 +1,15 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Saathveek",
+  "name": "Portfolio of Saathveek Gowrishankar, Computer Engineer and Data Scientist",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#0f1623",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "logo_sg.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
 }
