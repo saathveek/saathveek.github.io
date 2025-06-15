@@ -6,17 +6,17 @@ const experiences = [
         companyName: "Blue Cross and Blue Shield of Illinois",
         companyLink: "https://www.bcbsil.com/",
         roleTitle: "Infrastructure Engineer Intern",
-        summary: "insert summary here",
+        summary: "",
         logo: "/logo_bcbs.jpg",
         dateRange: "Since May 2025",
         location: "Chicago, IL",
         skillsUsed: ["Python", "Databricks", "Dynatrace", "Git"]
     },
     {
-        companyName: "Mullbry",
+        companyName: "Mullbry, Inc.",
         companyLink: "https://www.mullbry.com/",
         roleTitle: "Software Engineer Intern",
-        summary: "insert summary here",
+        summary: "",
         logo: "/logo_mullbry.jfif",
         dateRange: "May to August 2024",
         location: "New York, NY",
@@ -26,7 +26,7 @@ const experiences = [
         companyName: "Engineers Without Borders UIUC",
         companyLink: "https://www.ewbuiuc.org/",
         roleTitle: "President and Advisor",
-        summary: "insert summary here",
+        summary: "",
         logo: "/logo_ewb.jfif",
         dateRange: "January 2024 to Present",
         location: "Urbana-Champaign, IL",
@@ -36,7 +36,7 @@ const experiences = [
         companyName: "Human Factors and Aging Lab",
         companyLink: "https://hfaging.ahs.illinois.edu/",
         roleTitle: "Undergraduate Researcher",
-        summary: "insert summary here",
+        summary: "",
         logo: "/logo_hfa.png",
         dateRange: "August 2022 to Present",
         location: "Urbana-Champaign, IL",
@@ -48,7 +48,6 @@ const skillIconMap = skills.reduce((map, skill) => {
     map[skill.name] = skill.icon;
     return map;
 }, {});
-
 
 function Experience() {
     return (

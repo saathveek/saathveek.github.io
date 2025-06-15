@@ -5,14 +5,14 @@ import { PiMicrosoftExcelLogo } from 'react-icons/pi';
 
 export const skills = [
     { name: 'Python', icon: SiPython },
-    { name: 'C++', icon: SiCplusplus },
-    { name: 'JavaScript', icon: SiJavascript },
-    { name: 'Tensorflow', icon: SiTensorflow },
     { name: 'Azure DevOps', icon: VscAzureDevops },
+    { name: 'Tensorflow', icon: SiTensorflow },
+    { name: 'C++', icon: SiCplusplus },
     { name: 'Databricks', icon: SiDatabricks },
     { name: 'Dynatrace', icon: SiDynatrace },
     { name: 'Git', icon: SiGit },
     { name: 'React', icon: SiReact },
+    { name: 'JavaScript', icon: SiJavascript },
     { name: 'Excel', icon: PiMicrosoftExcelLogo }
 ];
 
