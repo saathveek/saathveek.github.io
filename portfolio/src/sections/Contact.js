@@ -3,63 +3,81 @@ import React from 'react';
 // TODO: Replace with EmailJS or similar service for better email handling
 function Contact() {
     return (
-        <section id="Contact" className="py-16 bg-background text-center">
-            <div className="max-w-md mx-auto text-left">
-
-                {/* Header + Description */}
-                <h1 className="text-6xl font-semibold text-primary mb-6">
+        <section id="Contact" className="py-16 bg-background text-left">
+            <div className="max-w-5xl mx-auto">
+                {/* Section title + message */}
+                <h1 className="text-6xl font-semibold text-primary mb-4">
                     Contact Me
                 </h1>
-                <p className="mb-6 text-text">Have a question or an interesting opportunity? Send me a message and I'll get back to you as soon as possible!</p>
+                <p className="mb-12 text-text max-w-2xl">
+                    Have a question or an interesting opportunity? Send me a message and I'll get back to you as soon as possible!
+                </p>
 
-                {/* Formspree integration */}
-                <form action="https://formspree.io/f/xanjeqav" method="POST" className="max-w-md mx-auto text-left">
-
-                    <div className="mb-4">
-                        <input
-                            type="text"
-                            id="name"
-                            name="name" required
-                            placeholder="Name"
-                            className="w-full px-2 py-2 rounded bg-background_muted text-text" />
+                {/* Form + LinkedIn badge side by side */}
+                <div className="flex flex-col md:flex-row justify-between items-start gap-12">
+                    {/* Left: Form */}
+                    <div className="flex-1">
+                        <form
+                            action="https://formspree.io/f/xanjeqav"
+                            method="POST"
+                            className="space-y-4"
+                        >
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                placeholder="Name"
+                                className="w-full px-2 py-2 rounded bg-background_muted text-text"
+                            />
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="Email"
+                                className="w-full px-2 py-2 rounded bg-background_muted text-text"
+                            />
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                required
+                                placeholder="Your message here..."
+                                className="w-full px-2 py-2 rounded bg-background_muted text-text"
+                            />
+                            <button
+                                type="submit"
+                                className="bg-blue-600 text-white px-4 py-2 rounded"
+                            >
+                                Send Message
+                            </button>
+                        </form>
                     </div>
 
-                    <div className="mb-4">
-                        <input
-                            type="email"
-                            id="email"
-                            name="email" required
-                            placeholder="Email"
-                            className="w-full px-2 py-2 rounded bg-background_muted text-text" />
+                    {/* Right: LinkedIn badge */}
+                    <div className="flex-shrink-0">
+                        <script
+                            src="https://platform.linkedin.com/badges/js/profile.js"
+                            async
+                            defer
+                            type="text/javascript"
+                        ></script>
+                        <div
+                            className="badge-base LI-profile-badge"
+                            data-locale="en_US"
+                            data-size="large"
+                            data-theme="dark"
+                            data-type="HORIZONTAL"
+                            data-vanity="saathveek"
+                            data-version="v1"
+                        ></div>
                     </div>
-
-                    <div className="mb-4">
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="4" required
-                            placeholder="Your message here..."
-                            className="w-full px-2 py-2 rounded bg-background_muted text-text">
-                        </textarea>
-                    </div>
-
-                    <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">Send Message</button>
-                </form>
+                </div>
             </div>
-
-            {/* Contact Info */}
-            <p className="mb-2">
-                📧 <a href="mailto:sg59@illinois.edu" className="text-blue-600 hover:underline">sg59@illinois.edu</a>
-            </p>
-
-            {/* Social Links */}
-            <p className="mb-6">
-                💼 <a href="https://linkedin.com/in/saathveek-gowrishankar" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">LinkedIn</a> ・
-                💻 <a href="https://github.com/saathveek-gowrishankar" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">GitHub</a>
-            </p>
         </section>
-
     );
 }
 
 export default Contact;
+

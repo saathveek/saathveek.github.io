@@ -57,7 +57,7 @@ function Experience() {
         >
             <div className="max-w-5xl w-full mx-auto text-left">
                 <h1 className="text-6xl font-semibold text-primary mb-10">
-                    Experience
+                    My Experience
                 </h1>
 
                 {experiences.map((exp, idx) => (
