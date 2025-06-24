@@ -2,6 +2,7 @@ import React from 'react';
 import { SiPython, SiJavascript, SiCplusplus, SiReact, SiTensorflow, SiGit, SiDatabricks, SiDynatrace, SiOpenai, SiKeras, SiDocker } from 'react-icons/si'; //https://react-icons.github.io/react-icons/icons/si/
 import { VscAzureDevops } from 'react-icons/vsc';
 import { PiMicrosoftExcelLogo } from 'react-icons/pi';
+import { IoLogoMicrosoft} from 'react-icons/io5'; // Placeholder for Power BI icon
 
 export const skills = [
   { name: 'Python', icon: SiPython }
@@ -12,7 +13,7 @@ export const skills = [
   ,{ name: 'Databricks', icon: SiDatabricks }
   ,{ name: 'Dynatrace', icon: SiDynatrace }
   ,{ name: 'Git', icon: SiGit }
-  ,{ name: 'Power BI', icon: SiPython } // Placeholder for now
+  ,{ name: 'Power BI', icon: IoLogoMicrosoft } // Placeholder for now
   ,{ name: 'Excel', icon: PiMicrosoftExcelLogo }
   ,{ name: 'OpenAI', icon: SiOpenai }
   ,{ name: 'React', icon: SiReact }
