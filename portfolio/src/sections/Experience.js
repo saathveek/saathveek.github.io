@@ -89,7 +89,7 @@ function Experience() {
                                         <img
                                             src={exp.logo}
                                             alt={`${exp.companyName} logo`}
-                                            className="w-00 h-20 object-contain rounded-md bg-white border border-white border-2 hover:scale-105"
+                                            className="w-20 h-20 object-contain rounded-md bg-white border border-white border-2 hover:scale-105"
                                         />
                                     </a>
                                     {/* Role, company title, date, location */}
