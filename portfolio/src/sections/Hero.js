@@ -41,6 +41,12 @@ function Hero() {
                     </a>
                 </div>
 
+                <div className = "text-text text-xl mt-10">
+                    <p>
+                        Welcome! My React portfolio is currently still in progress, but I'm always happy to connect!
+                    </p>
+                </div>
+
                 {/* Button to Content */}
                 <a
                     href="#About"
