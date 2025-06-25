@@ -1,5 +1,5 @@
 import React from "react";
-import { skills } from "./Skills.js";
+import { skills_all } from "./Skills.js";
 
 const experiences = [
     {
@@ -13,13 +13,13 @@ const experiences = [
         dateRange: "Since May 2025",
         location: "Chicago, IL",
         skillsUsed: [
-                     "Python", 
-                     "Databricks", 
-                     "Dynatrace", 
-                     "Git",
-                     "Power BI",
-                     "Excel",
-                    ]
+            "Python",
+            "Databricks",
+            "Dynatrace",
+            "Git",
+            "Power BI",
+            "Excel",
+        ]
     },
     {
         companyName: "Mullbry, Inc.",
@@ -43,7 +43,9 @@ const experiences = [
         logo: "/logo_ewb.jfif",
         dateRange: "January 2024 to Present",
         location: "Urbana-Champaign, IL",
-        skillsUsed: ["Python"]
+        skillsUsed: [
+            "Contextual Engineering"
+        ]
     },
     {
         companyName: "Human Factors and Aging Lab",
@@ -59,7 +61,7 @@ const experiences = [
     },
 ]
 
-const skillIconMap = skills.reduce((map, skill) => {
+const skillIconMap = skills_all.reduce((map, skill) => {
     map[skill.name] = skill.icon;
     return map;
 }, {});
@@ -114,21 +116,22 @@ function Experience() {
                                             Icon && (
                                                 <div
                                                     key={skillName}
-                                                    className="relative group w-16 h-16 mt-6 flex items-center justify-center border border-primary rounded-md hover:scale-105 transition-transform duration-150"
+                                                    className="w-16 h-16 mt-6 flex items-center justify-center border border-primary rounded-md hover:scale-105 transition-transform duration-150 relative group"
                                                 >
                                                     {/* Icon */}
                                                     <div className="text-4xl text-primary">
                                                         <Icon />
                                                     </div>
 
-                                                    {/* Tooltip */}
-                                                    <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10 pointer-events-none">
+                                                    {/* Tooltip (scoped to this icon only) */}
+                                                    <div className="absolute top-[-2rem] left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none z-10">
                                                         {skillName}
                                                     </div>
                                                 </div>
                                             )
                                         );
                                     })}
+
                                 </div>
 
                             </div>

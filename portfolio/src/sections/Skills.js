@@ -3,8 +3,9 @@ import { SiPython, SiJavascript, SiCplusplus, SiReact, SiTensorflow, SiGit, SiDa
 import { VscAzureDevops } from 'react-icons/vsc';
 import { PiMicrosoftExcelLogo } from 'react-icons/pi';
 import { IoLogoMicrosoft} from 'react-icons/io5'; // Placeholder for Power BI icon
+import { FaUsersGear } from 'react-icons/fa6';
 
-export const skills = [
+export const skills_displayed = [
   { name: 'Python', icon: SiPython }
   ,{ name: 'Tensorflow', icon: SiTensorflow }
   ,{ name: 'Keras', icon: SiKeras }
@@ -22,6 +23,11 @@ export const skills = [
   // Add more skills as needed
 ];
 
+export const skills_all = [
+  ...skills_displayed,
+  { name: 'Contextual Engineering', icon: FaUsersGear}
+]
+
 function Skills() {
   return (
     <section
@@ -35,7 +41,7 @@ function Skills() {
         </h1>
 
         <div className="grid grid-cols-7 gap-y-8 max-w-5xl w-full items-center justify-items-center mx-auto">
-          {skills.map((skill) => (
+          {skills_displayed.map((skill) => (
             <div
               key={skill.name}
               className="w-28 h-28 flex flex-col items-center justify-center border-2 border-primary 
