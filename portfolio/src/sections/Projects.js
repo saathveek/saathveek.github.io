@@ -1,0 +1,113 @@
+import React from "react";
+import { skills_all } from "./Skills.js";
+
+// Example projects array
+const projects = [
+  {
+    title: "Keyword Spotting with TinyML",
+    link: "https://github.com/saathveek/tinyml-keyword-spotting",
+    image: "/project_tinyml.jpg",
+    description: [
+      "Built a continuous keyword spotting system on the Arduino Nano 33 BLE Sense using TensorFlow Lite.",
+      "Trained and deployed a custom audio model for real-time wake-word detection in low-power environments.",
+    ],
+    skillsUsed: ["Python", "Tensorflow", "Git"],
+  },
+  {
+    title: "Project 2",
+    link: "/project_tinyml.jpg",
+    
+    image: "",
+    description: [
+      "Designed a full-stack platform with role-based dashboards for students, parents, and tutors.",
+      "Integrated Stripe payments, AI-powered note generation, and SAT/ACT test engine support.",
+    ],
+    skillsUsed: ["React", "Git", "JavaScript"],
+  },
+];
+
+// map skill names to icon components
+const skillIconMap = skills_all.reduce((map, skill) => {
+  map[skill.name] = skill.icon;
+  return map;
+}, {});
+
+function Projects() {
+  return (
+    <section id="Projects" className="bg-background p-8">
+      <div className="max-w-5xl mx-auto">
+        <h1 className="text-6xl font-semibold text-primary mb-12 text-left">
+          My Favorite Projects
+        </h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {projects.map((project, idx) => (
+            <div
+              key={idx}
+              className="border border-primary rounded-xl shadow-md hover:shadow-xl transition-shadow duration-200 overflow-hidden"
+            >
+              {/* Project Banner */}
+              {project.image && (
+                <img
+                  src={project.image}
+                  alt={`${project.title} preview`}
+                  className="w-full h-48 object-cover"
+                />
+              )}
+
+              {/* Project Content */}
+              <div className="p-6">
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-2xl font-bold text-primary hover:underline"
+                  >
+                    {project.title}
+                  </a>
+                ) : (
+                  <h2 className="text-2xl font-bold text-primary">{project.title}</h2>
+                )}
+
+                <div className="mb-4 space-y-2 mt-2">
+                  {project.description.map((line, i) => (
+                    <p key={i} className="text-text text-base">
+                      {line}
+                    </p>
+                  ))}
+                </div>
+
+                {/* Skills Used */}
+                <div className="flex gap-3 flex-wrap mt-4">
+                  {project.skillsUsed.map((skillName) => {
+                    const Icon = skillIconMap[skillName];
+                    return (
+                      Icon && (
+                        <div
+                          key={skillName}
+                          className="relative group w-16 h-16 flex items-center justify-center border border-primary rounded-md hover:scale-105 transition-transform duration-150"
+                        >
+                          <div className="text-3xl text-primary">
+                            <Icon />
+                          </div>
+
+                          {/* Tooltip */}
+                          <div className="absolute -top-7 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10 pointer-events-none">
+                            {skillName}
+                          </div>
+                        </div>
+                      )
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Projects;
