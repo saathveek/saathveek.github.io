@@ -19,10 +19,10 @@ const projects = [
     
     image: "/",
     description: [
-      "I built LASSO and RIDGE supervised regression models to estimate older adults' trust in novel assistive robots based on their familiarity with other technologies.",
-      ""
+      "I developed LASSO and RIDGE regression models to predict older adults' trust in novel assistive robots based on their familiarity with other technologies.",
+      "The resulting insights offer a data-driven foundation for how to design more trustworthy, user-centered  robots that support aging in place."
     ],
-    skillsUsed: ["React", "Git", "JavaScript"],
+    skillsUsed: ["Python", "Machine Learning", "statsmodels", "scikit learn"],
   },
 ];
 

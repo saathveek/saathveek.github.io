@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiPython, SiJavascript, SiCplusplus, SiReact, SiTensorflow, SiGit, SiDatabricks, SiDynatrace, SiOpenai, SiKeras, SiDocker } from 'react-icons/si'; //https://react-icons.github.io/react-icons/icons/si/
+import { SiPython, SiJavascript, SiCplusplus, SiReact, SiTensorflow, SiGit, SiDatabricks, SiDynatrace, SiOpenai, SiKeras, SiDocker,  SiScikitlearn } from 'react-icons/si'; //https://react-icons.github.io/react-icons/icons/si/
 import { VscAzureDevops } from 'react-icons/vsc';
 import { PiMicrosoftExcelLogo } from 'react-icons/pi';
 import { IoLogoMicrosoft} from 'react-icons/io5'; // Placeholder for Power BI icon
@@ -21,12 +21,14 @@ export const skills_displayed = [
   ,{ name: 'JavaScript', icon: SiJavascript }
   ,{ name: 'Docker', icon: SiDocker }
   ,{ name: 'statsmodels', icon: SiPython}
+  ,{ name: 'scikit learn', icon: SiScikitlearn}
   // Add more skills as needed
 ];
 
 export const skills_all = [
-  ...skills_displayed,
-  { name: 'Contextual Engineering', icon: FaUsersGear}
+  ...skills_displayed
+  ,{ name: 'Contextual Engineering', icon: FaUsersGear}
+  ,{ name: 'Machine Learning', icon: SiPython}
 ]
 
 function Skills() {
