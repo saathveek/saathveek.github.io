@@ -20,6 +20,7 @@ export const skills_displayed = [
   ,{ name: 'React', icon: SiReact }
   ,{ name: 'JavaScript', icon: SiJavascript }
   ,{ name: 'Docker', icon: SiDocker }
+  ,{ name: 'statsmodels', icon: SiPython}
   // Add more skills as needed
 ];
 
