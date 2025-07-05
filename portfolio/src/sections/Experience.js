@@ -15,8 +15,8 @@ const experiences = [
         skillsUsed: [
             "Python",
             "Databricks",
+            "PySpark",
             "Dynatrace",
-            "Git",
             "Power BI",
             "Excel",
         ]

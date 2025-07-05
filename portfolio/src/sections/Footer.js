@@ -16,11 +16,11 @@ function Footer() {
                     <p className="font-semibold">Saathveek Gowrishankar</p>
                     <span className="text-muted">© {new Date().getFullYear()}</span>
                     <span className="text-muted hidden md:inline">|</span>
-                    <span className="text-muted">{version}</span>
+                    <span className="text-muted">Portfolio v{version}</span>
                 </div>
 
                 {/* Right: Social Icons */}
-                <div className="flex gap-4 text-2xl text-muted">
+                <div className="flex gap-4 text-muted">
                     <a
                         href="mailto:sg59@illinois.edu"
                         className="text-4xl mt-[-4px] hover:text-primary transition-colors"
@@ -39,7 +39,7 @@ function Footer() {
                         href="https://linkedin.com/in/saathveek"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-primary transition-colors"
+                        className="text-2xl hover:text-primary transition-colors"
                     >
                         <SiLinkedin />
                     </a>
