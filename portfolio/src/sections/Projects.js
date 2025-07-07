@@ -4,25 +4,25 @@ import { skills_all } from "./Skills.js";
 // Example projects array
 const projects = [
   {
-    title: "Keyword Spotting with TinyML",
-    link: "https://github.com/saathveek/tinyml-keyword-spotting",
+    title: "Embedded Keyword Spotting with Tiny\u00A0Machine Learning",
+    link: "https://github.com/saathveek/embedded-tiny-ml-keyword-spotting",
     image: "/project_tinyml.jpg",
     description: [
-      "Built a continuous keyword spotting system on the Arduino Nano 33 BLE Sense using TensorFlow Lite.",
-      "Trained and deployed a custom audio model for real-time wake-word detection in low-power environments.",
+      "I designed real-time voice recognition for five standard commands (e.g. \"forward\", \"stop\") for use in interactive IoT applications, such as robots and wearables.",
+      "To deploy the project on a resource-constrained microcontroller, I trained a neural network using TensorFlow Lite and optimized the model with weight quantization.",
     ],
-    skillsUsed: ["Python", "Tensorflow", "Git"],
+    skillsUsed: ["Python", "Tensorflow", "Git", "statsmodels"],
   },
   {
-    title: "Project 2",
+    title: "An ML Approach to Understanding Older Adults' Perspectives",
     link: "/project_tinyml.jpg",
     
-    image: "",
+    image: "/",
     description: [
-      "Designed a full-stack platform with role-based dashboards for students, parents, and tutors.",
-      "Integrated Stripe payments, AI-powered note generation, and SAT/ACT test engine support.",
+      "I developed LASSO and RIDGE regression models to predict older adults' trust in novel assistive robots based on their familiarity with other technologies.",
+      "The resulting insights offer a data-driven foundation for how to design more trustworthy, user-centered  robots that support aging in place."
     ],
-    skillsUsed: ["React", "Git", "JavaScript"],
+    skillsUsed: ["Python", "Machine Learning", "statsmodels", "scikit learn"],
   },
 ];
 

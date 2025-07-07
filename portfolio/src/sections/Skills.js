@@ -1,31 +1,46 @@
 import React from 'react';
-import { SiPython, SiJavascript, SiCplusplus, SiReact, SiTensorflow, SiGit, SiDatabricks, SiDynatrace, SiOpenai, SiKeras, SiDocker } from 'react-icons/si'; //https://react-icons.github.io/react-icons/icons/si/
+import { SiPython, SiJavascript, SiCplusplus, SiReact, SiTensorflow, SiGit, SiDatabricks, SiDynatrace, SiOpenai, SiKeras, SiDocker,  SiScikitlearn, SiApachespark } from 'react-icons/si'; //https://react-icons.github.io/react-icons/icons/si/
 import { VscAzureDevops } from 'react-icons/vsc';
 import { PiMicrosoftExcelLogo } from 'react-icons/pi';
-import { IoLogoMicrosoft} from 'react-icons/io5'; // Placeholder for Power BI icon
+import { IoLogoMicrosoft} from 'react-icons/io5';
 import { FaUsersGear } from 'react-icons/fa6';
+import { MdQueryStats } from "react-icons/md";
+// import { GiArtificialIntelligence } from "react-icons/gi";
+import { IoStatsChart } from "react-icons/io5";
 
 export const skills_displayed = [
-  { name: 'Python', icon: SiPython }
-  ,{ name: 'Tensorflow', icon: SiTensorflow }
-  ,{ name: 'Keras', icon: SiKeras }
-  ,{ name: 'C++', icon: SiCplusplus }
-  ,{ name: 'Azure DevOps', icon: VscAzureDevops }
-  ,{ name: 'Databricks', icon: SiDatabricks }
-  ,{ name: 'Dynatrace', icon: SiDynatrace }
-  ,{ name: 'Git', icon: SiGit }
-  ,{ name: 'Power BI', icon: IoLogoMicrosoft } // Placeholder for now
-  ,{ name: 'Excel', icon: PiMicrosoftExcelLogo }
-  ,{ name: 'OpenAI', icon: SiOpenai }
-  ,{ name: 'React', icon: SiReact }
-  ,{ name: 'JavaScript', icon: SiJavascript }
-  ,{ name: 'Docker', icon: SiDocker }
-  // Add more skills as needed
+  // ML + DS
+  { name: 'ML', icon: MdQueryStats},
+  { name: 'Python', icon: SiPython },
+  { name: 'Tensorflow', icon: SiTensorflow },
+  { name: 'statsmodels', icon: IoStatsChart},
+  { name: 'scikit learn', icon: SiScikitlearn},
+  
+  // Big Data
+  { name: 'PySpark', icon: SiApachespark},
+  { name: 'Databricks', icon: SiDatabricks },
+  { name: 'Keras', icon: SiKeras },
+
+  // Programming + Tools
+  { name: 'C++', icon: SiCplusplus },
+  { name: 'Git', icon: SiGit },
+
+  // BI and reporting
+  { name: 'Power BI', icon: IoLogoMicrosoft }, 
+  { name: 'Excel', icon: PiMicrosoftExcelLogo },
+
+  // Full-stack
+  { name: 'Azure DevOps', icon: VscAzureDevops },
+  { name: 'React', icon: SiReact },
 ];
 
 export const skills_all = [
   ...skills_displayed,
-  { name: 'Contextual Engineering', icon: FaUsersGear}
+  { name: 'Contextual Engineering', icon: FaUsersGear},
+  { name: 'OpenAI', icon: SiOpenai },
+  { name: 'Docker', icon: SiDocker },
+  { name: 'Dynatrace', icon: SiDynatrace },
+  { name: 'JavaScript', icon: SiJavascript },
 ]
 
 function Skills() {
