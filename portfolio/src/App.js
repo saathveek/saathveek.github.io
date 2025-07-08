@@ -30,9 +30,9 @@ function App() {
       {showNavbar && <Navbar />}
       <About />
       <Skills />
-      <Certifications />
       <Experience />
       <Projects />
+      <Certifications />
       <Contact />
       <Footer />
     </div>
