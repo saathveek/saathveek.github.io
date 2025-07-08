@@ -15,7 +15,8 @@ function Navbar() {
                 <ul className="flex space-x-6">
                     <li><a href="#Hero" className="text-text hover:text-primary">Home</a></li>
                     <li><a href="#About" className="text-text hover:text-primary">About</a></li>
-                    <li><a href="#Skills" className="text-text hover:text-primary">Skills and Certificates</a></li>
+                    <li><a href="#Skills" className="text-text hover:text-primary">Skills</a></li>
+                    <li><a href="#Certifications" className="text-text hover:text-primary">Certifications</a></li>
                     <li><a href="#Experience" className="text-text hover:text-primary">Experience</a></li>
                     <li><a href="#Contact" className="text-text hover:text-primary">Contact</a></li>
                 </ul>
