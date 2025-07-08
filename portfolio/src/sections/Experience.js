@@ -80,7 +80,7 @@ function Experience() {
                 {experiences.map((exp, idx) => (
                     <div
                         key={idx}
-                        className="mb-10 p-6 border border-primary rounded-xl shadow hover:shadow-lg transition-shadow"
+                        className="mb-10 p-6 border border-primary rounded-xl shadow hover:shadow-lg transition-all duration-300 ease-in-out"
                     >
                         <div className="flex flex-col md:flex-row gap-6">
                             {/* Left column: logo, title, company, dates, skills */}
@@ -91,7 +91,7 @@ function Experience() {
                                         <img
                                             src={exp.logo}
                                             alt={`${exp.companyName} logo`}
-                                            className="w-20 h-20 object-contain rounded-md bg-white border border-white border-2 hover:scale-105"
+                                            className="w-20 h-20 object-contain rounded-md bg-white border border-white border-2 transition-transform duration-300 ease-in-out hover:scale-105"
                                         />
                                     </a>
                                     {/* Role, company title, date, location */}

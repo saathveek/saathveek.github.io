@@ -57,13 +57,16 @@ function Skills() {
             <div
               key={skill.name}
               className="w-28 h-28 flex flex-col items-center justify-center border-2 border-primary 
-              rounded-xl shadow hover:scale-105 transition-transform"
+             rounded-xl shadow group transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md"
             >
-              <div className="text-6xl text-primary">
+              <div className="text-6xl text-primary transition-transform duration-300 ease-in-out group-hover:scale-105">
                 <skill.icon />
               </div>
-              <span className="text-xs mt-2 text-text">{skill.name}</span>
+              <span className="text-xs mt-2 text-text transition-opacity duration-300 ease-in-out group-hover:opacity-90">
+                {skill.name}
+              </span>
             </div>
+
           ))}
         </div>
       </div>
