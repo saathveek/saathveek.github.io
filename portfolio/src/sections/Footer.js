@@ -1,12 +1,11 @@
 import React from 'react';
-import { SiGithub, SiLinkedin, /*SiGmail*/ } from "react-icons/si";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import { IoIosMail } from "react-icons/io";
-// import { PiMicrosoftOutlookLogoBold } from "react-icons/pi";
+import { FaReact } from "react-icons/fa";
 
 const version = process.env.REACT_APP_VERSION;
 
 function Footer() {
-    // var iconClassName = "hover:text-primary transition-colors"
     return (
         <footer className="bg-background_muted text-background border-t border-background_muted px-6 py-3">
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6">
@@ -17,6 +16,8 @@ function Footer() {
                     <span className="text-muted">© {new Date().getFullYear()}</span>
                     <span className="text-muted hidden md:inline">|</span>
                     <span className="text-muted">Portfolio v{version}</span>
+                    <FaReact className="text-primary animate-spin-slow" size={20} />
+                    <span>I built this from scratch with React!</span>
                 </div>
 
                 {/* Right: Social Icons */}

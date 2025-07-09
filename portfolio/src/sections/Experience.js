@@ -6,7 +6,7 @@ const experiences = [
         companyName: "Blue Cross and Blue Shield of Illinois",
         companyLink: "https://www.bcbsil.com/",
         roleTitle: "Infrastructure Engineer Intern",
-        summary: ["I built machine learning pipelines and ARIMA models forecasting infrastructure demand across 2,700+ apps, enabling proactive, data-driven capacity upgrades.",
+        summary: ["I built machine learning pipelines and forecasting infrastructure to determine demand across 2,700+ apps, enabling proactive, data-driven capacity upgrades.",
             "I automated Dynatrace problem monitoring, boosting time and resource efficiency by over 60% across existing implementations."
         ],
         logo: "/logo_bcbs.jpg",

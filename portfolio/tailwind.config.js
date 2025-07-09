@@ -5,6 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        // satisfy: ['Satisfy', 'cursive'],
+        greatvibes: ['"Great Vibes"', 'cursive'],
+        // ...other fonts if any
+      },
       colors: {
         primary: "#5cbad0",      // Light blue
         secondary: "#eddf93",    // Cream
@@ -12,6 +17,9 @@ module.exports = {
         background: "#0f1623",   // Navy
         background_muted: "#38455c",  // Navy muted
         text: "#dfdbdf",          // White
+      },
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
       },
     },
   },

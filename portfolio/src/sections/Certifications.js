@@ -60,7 +60,7 @@ function CertificationCard({ cert }) {
 
 function Certifications() {
   return (
-    <section id="Certification" className="bg-background p-8">
+    <section id="Certifications" className="bg-background p-8">
       <div className="max-w-5xl mx-auto w-full text-left">
         {/* Section Title */}
         <h1 className="text-6xl font-semibold text-primary mb-12 text-left">

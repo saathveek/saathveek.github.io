@@ -27,7 +27,9 @@ function App() {
   return (
     <div>
       <Hero />
-      {showNavbar && <Navbar />}
+      <div className={`fixed top-0 left-0 w-full z-50 transition-transform duration-500 ease-in-out ${showNavbar ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"}`}>
+        <Navbar />
+      </div>
       <About />
       <Skills />
       <Experience />
