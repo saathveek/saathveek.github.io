@@ -1,16 +1,17 @@
 import React from 'react';
-import { SiPython, SiCplusplus, SiReact, SiTensorflow, SiGit, SiDatabricks, SiDynatrace, SiOpenai, SiKeras, SiDocker, SiScikitlearn, SiApachespark } from 'react-icons/si'; //https://react-icons.github.io/react-icons/icons/si/
+import { SiPython, SiCplusplus, SiReact, SiTensorflow, SiGit, SiDatabricks, SiDynatrace, SiOpenai, SiKeras, SiDocker, SiScikitlearn, SiApachespark, SiAcm } from 'react-icons/si'; //https://react-icons.github.io/react-icons/icons/si/
 import { VscAzureDevops } from 'react-icons/vsc';
 import { PiMicrosoftExcelLogo, PiFileSql } from 'react-icons/pi';
 import { IoLogoMicrosoft, IoLogoJavascript } from 'react-icons/io5';
-import { FaUsersGear } from 'react-icons/fa6';
+import { FaUsersGear, FaMagnifyingGlassChart } from 'react-icons/fa6';
 import { MdQueryStats } from "react-icons/md";
+import { RiPresentationLine } from "react-icons/ri";
 // import { GiArtificialIntelligence } from "react-icons/gi";
 import { IoStatsChart } from "react-icons/io5";
 
 export const skills_displayed = [
   // ML + DS
-  { name: 'ML', icon: MdQueryStats },
+  { name: 'Mach. Learning', icon: MdQueryStats },
   { name: 'Python', icon: SiPython },
   { name: 'Tensorflow', icon: SiTensorflow },
   { name: 'statsmodels', icon: IoStatsChart },
@@ -29,17 +30,21 @@ export const skills_displayed = [
   // BI and reporting
   { name: 'SQL', icon: PiFileSql },
   { name: 'Power BI', icon: IoLogoMicrosoft },
-  { name: 'Excel', icon: PiMicrosoftExcelLogo },
+  { name: 'Matplotlib', icon: FaMagnifyingGlassChart},
 ];
 
 export const skills_all = [
   ...skills_displayed,
+  { name: 'Machine Learning', icon: MdQueryStats },
   { name: 'Contextual Engineering', icon: FaUsersGear },
-  { name: 'OpenAI', icon: SiOpenai },
+  { name: 'OpenAI API', icon: SiOpenai },
   { name: 'Docker', icon: SiDocker },
   { name: 'Dynatrace', icon: SiDynatrace },
   { name: 'Keras', icon: SiKeras },
   { name: 'React', icon: SiReact },
+  { name: 'Excel', icon: PiMicrosoftExcelLogo },
+  { name: 'ACM Publication', icon: SiAcm },
+  { name: 'Formal Presentation', icon: RiPresentationLine}
 ]
 
 function Skills() {

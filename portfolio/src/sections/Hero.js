@@ -25,7 +25,7 @@ function Hero() {
       <div className="max-w-6xl w-full text-center relative">
         {/* Profile Picture */}
         <img
-          src="/Saathveek_Gowrishankar_photo_head.png"
+          src="/Saathveek_Gowrishankar_Photo_head.png"
           alt="Saathveek"
           className="rounded-full w-48 h-48 mx-auto mb-6 border-4 border-primary"
         />
@@ -61,13 +61,15 @@ function Hero() {
             </a>
           ))}
         </div>
-
-        {/* Description */}
+        
+        {/*
+        {/* Disclaimer
         <div className="text-text text-xl mt-10">
           <p>
             Welcome! My React portfolio is currently still in progress, but I'm always happy to connect!
           </p>
         </div>
+        */}
 
         {/* Bouncing Arrow Button */}
         {showArrow && (

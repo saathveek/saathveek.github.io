@@ -5,40 +5,49 @@ const experiences = [
     {
         companyName: "Blue Cross and Blue Shield of Illinois",
         companyLink: "https://www.bcbsil.com/",
-        roleTitle: "Infrastructure Engineer Intern",
-        summary: ["I built machine learning pipelines and forecasting infrastructure to determine demand across 2,700+ apps, enabling proactive, data-driven capacity upgrades.",
+        roleTitle: "Infrastructure Engineering Intern",
+        summary: ["I built machine learning pipelines to forecast demand across 2,700+ apps, enabling proactive, data-driven capacity upgrades.",
             "I automated Dynatrace problem monitoring, boosting time and resource efficiency by over 60% across existing implementations."
         ],
         logo: "/logo_bcbs.jpg",
         dateRange: "Since May 2025",
         location: "Chicago, IL",
         skillsUsed: [
+            "Machine Learning",
             "Python",
             "Databricks",
             "PySpark",
-            "Dynatrace",
+            "SQL",
             "Power BI",
-            "Excel",
+            // "Dynatrace",
+            // "Excel",
         ]
     },
     {
-        companyName: "Mullbry, Inc.",
+        companyName: "Mullbry, Inc. (Startup)",
         companyLink: "https://www.mullbry.com/",
-        roleTitle: "Software Engineer Intern",
+        roleTitle: "Software Engineering Intern",
         summary: ["At Mullbry, I worked alongside the CEO to transform manual financial workflows into scalable, AI-powered systems using OpenAI function calling and Python.",
             "I engineered testing frameworks and automated backend operations to accelerate approvals and drive growth in a high-velocity startup environment."
         ],
         logo: "/logo_mullbry.jfif",
         dateRange: "May to August 2024",
         location: "New York, NY",
-        skillsUsed: ["Python", "Azure DevOps", "Git"]
+        skillsUsed: [
+            "Python", 
+            "Azure DevOps", 
+            "Git",
+            "OpenAI API",
+            "JavaScript",
+            "Excel",
+        ]
     },
     {
         companyName: "Engineers Without Borders UIUC",
         companyLink: "https://www.ewbuiuc.org/",
         roleTitle: "President and Advisor",
-        summary: ["At EWB-UIUC, I led 20+ student leaders and 170+ members advancing context-driven engineering solutions impacting 20,000+ people across 4 countries.",
-            "As President, I pioneered a membership incentive program and a workshop series focused on leadership, technical education, and member enrichment."
+        summary: ["At EWB-UIUC, I led 20+ student leaders and 170+ members advancing context-driven engineering solutions helping 20,000+ people across 4 countries.",
+            "As President, I pioneered a membership incentive program and a workshop series focused on leadership, learning, and member enrichment."
         ],
         logo: "/logo_ewb.jfif",
         dateRange: "January 2024 to Present",
@@ -50,14 +59,21 @@ const experiences = [
     {
         companyName: "Human Factors and Aging Lab",
         companyLink: "https://hfaging.ahs.illinois.edu/",
-        roleTitle: "Undergraduate Researcher",
+        roleTitle: "Human-Robot Interaction Researcher",
         summary: ["At HFA, I co-authored a pending publication and conducted two symposium presentations on how older adults trust and interact with assistive robots.",
-            "I automated data pipelines, modeled trust patterns with Lasso and Ridge regression, and shaped foundations for future human-centered assistive technology design."
+            "I automated data pipelines, modeled trust patterns, and shaped foundations for future human-centered assistive technology design."
         ],
         logo: "/logo_hfa.png",
         dateRange: "August 2022 to Present",
         location: "Urbana-Champaign, IL",
-        skillsUsed: ["Python", "Excel"]
+        skillsUsed: [
+            "Python",
+            "scikit learn",
+            "statsmodels",
+            "Excel",
+            "Matplotlib",
+            "ACM Publication",
+        ]
     },
 ]
 
@@ -84,14 +100,14 @@ function Experience() {
                     >
                         <div className="flex flex-col md:flex-row gap-6">
                             {/* Left column: logo, title, company, dates, skills */}
-                            <div className="flex-shrink-0 md:w-1/2">
-                                <div className="flex items-start gap-4 mb-4">
+                            <div className="flex-shrink-0 md:w-[54%]">
+                                <div className="flex items-start gap-4">
                                     {/* Company Logo with link */}
                                     <a href={exp.companyLink} target="_blank" rel="noopener noreferrer">
                                         <img
                                             src={exp.logo}
                                             alt={`${exp.companyName} logo`}
-                                            className="w-20 h-20 object-contain rounded-md bg-white border border-white border-2 transition-transform duration-300 ease-in-out hover:scale-105"
+                                            className="w-24 h-24 object-contain rounded-md bg-white border border-white border-2 transition-transform duration-300 ease-in-out hover:scale-105"
                                         />
                                     </a>
                                     {/* Role, company title, date, location */}
@@ -102,14 +118,14 @@ function Experience() {
                                         <p className="text-text font-semibold text-lg">
                                             {exp.companyName}
                                         </p>
-                                        <p className="text-sm text-text">
+                                        <p className="text-text">
                                             {exp.dateRange} • {exp.location}
                                         </p>
                                     </div>
                                 </div>
 
                                 {/* Skills Used */}
-                                <div className="flex gap-5 flex-wrap">
+                                <div className="flex gap-6 flex-wrap">
                                     {exp.skillsUsed.map((skillName) => {
                                         const Icon = skillIconMap[skillName];
                                         return (

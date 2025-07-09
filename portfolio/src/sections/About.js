@@ -27,7 +27,7 @@ function About() {
       {/* Right */}
       <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-[28rem] flex-shrink-0">
         <img
-          src="/Saathveek_Gowrishankar_photo_globe.png"
+          src="/Saathveek_Gowrishankar_Photo_globe.png"
           alt="Saathveek standing with his arm around a globe"
           className="w-full h-full object-contain rounded-xl border-primary"
         />

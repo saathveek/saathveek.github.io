@@ -2,21 +2,21 @@ import React from "react";
 
 const certifications = [
   {
-    title: "AWS CP Certification",
-    certifier: "Coming soon",
-    isPlaceholder: true,
-  },
-  {
     title: "Certificate in Data Science",
     certifier: "University of Illinois Urbana-Champaign",
-    imgSrc: "/Saathveek_Gowrishankar_cert_uiuc_DS.png",
-    link: "/Saathveek_Gowrishankar_cert_uiuc_DS.pdf",
+    imgSrc: "/Saathveek_Gowrishankar_Cert_uiuc_ds.png",
+    link: "/Saathveek_Gowrishankar_Cert_uiuc_ds.pdf",
   },
   {
-    title: "Certification",
+    title: "AWS Cloud Practitioner Certification",
     certifier: "Coming soon",
     isPlaceholder: true,
   },
+  // {
+  //   title: "Certification",
+  //   certifier: "Coming soon",
+  //   isPlaceholder: true,
+  // },
 ];
 
 function CertificationCard({ cert }) {

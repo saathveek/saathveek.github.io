@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.5.8",
+  "version": "1.5.13",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
