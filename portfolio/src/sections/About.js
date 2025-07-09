@@ -4,7 +4,7 @@ function About() {
   return (
     <section
       id="About"
-      className="flex flex-col md:flex-row items-center justify-center gap-12 p-8 bg-background"
+      className="flex flex-col md:flex-row items-center justify-center gap-12 p-8 bg-background scroll-mt-8"
     >
       {/* Left */}
       <div className="max-w-xl">

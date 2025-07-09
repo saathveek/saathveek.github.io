@@ -44,7 +44,7 @@ export const skills_all = [
 
 function Skills() {
   return (
-    <section id="Skills" className="flex flex-col items-center p-8 bg-background">
+    <section id="Skills" className="flex flex-col items-center p-8 bg-background scroll-mt-8">
       <div className="max-w-5xl mx-auto w-full text-left">
         {/* Heading */}
         <h1 className="text-6xl font-semibold text-primary mb-12 text-left">

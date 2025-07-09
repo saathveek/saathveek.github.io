@@ -3,14 +3,14 @@ import React from 'react';
 function Navbar() {
     return (
         <nav className="w-full bg-background bg-opacity-60 shadow backdrop-blur-sm">
-            <div className="max-w-6xl mx-auto px-4 py-2 flex justify-between items-center">
+            <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
                 <div className="flex items-center space-x-3">
                     <img 
                         src="/logo_sg.png" 
                         alt="Logo" 
                         className="h-8 w-8 object-contain drop-shadow-[0_0_2px_white]" 
                     />
-                    <span className="font-greatvibes text-text text-2xl">Saathveek Gowrishankar</span>
+                    <span className="font-greatvibes text-text text-3xl">Saathveek Gowrishankar</span>
 
                     {/* <span className="font-semibold text-xl text-primary">Saathveek Gowrishankar</span> */}
                 </div>

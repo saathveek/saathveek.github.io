@@ -70,7 +70,7 @@ function Experience() {
     return (
         <section
             id="Experience"
-            className="flex flex-col items-start justify-center p-8 bg-background"
+            className="flex flex-col items-start justify-center p-8 bg-background scroll-mt-8"
         >
             <div className="max-w-5xl w-full mx-auto text-left">
                 <h1 className="text-6xl font-semibold text-primary mb-10">

@@ -1,33 +1,25 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Hero() {
-  const [isVisible, setIsVisible] = useState(true);
-  const heroRef = useRef(null);
+  const [showArrow, setShowArrow] = useState(true);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Entry is intersecting = hero section visible
-        setIsVisible(entry.isIntersecting);
-      },
-      { threshold: 0.1 } // Adjust as needed
-    );
-
-    if (heroRef.current) {
-      observer.observe(heroRef.current);
-    }
-
-    return () => {
-      if (heroRef.current) {
-        observer.unobserve(heroRef.current);
-      }
+    const handleScroll = () => {
+      const isAtTop = window.scrollY <= 5;
+      setShowArrow(isAtTop);
     };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleArrowClick = () => {
+    setShowArrow(false); // Hide arrow when clicked
+  };
 
   return (
     <section
       id="Hero"
-      ref={heroRef}
       className="min-h-screen flex items-center justify-center p-8 bg-background"
     >
       <div className="max-w-6xl w-full text-center relative">
@@ -38,7 +30,7 @@ function Hero() {
           className="rounded-full w-48 h-48 mx-auto mb-6 border-4 border-primary"
         />
 
-        {/* Text */}
+        {/* Intro Text */}
         <h1 className="text-5xl text-text mb-2">
           Hello, I'm <span className="text-primary">Saathveek</span>.
         </h1>
@@ -48,21 +40,22 @@ function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex justify-center gap-4">
-          {[
-            {
-              label: 'View Resume',
-              href: '/Saathveek_Gowrishankar_Resume.pdf',
-              newTab: true,
-            },
-            { label: 'Contact Me', href: '/#Contact', newTab: false },
-          ].map(({ label, href, newTab }) => (
+          {[{
+            label: 'View Resume',
+            href: '/Saathveek_Gowrishankar_Resume.pdf',
+            newTab: true,
+          }, {
+            label: 'Contact Me',
+            href: '/#Contact',
+            newTab: false,
+          }].map(({ label, href, newTab }) => (
             <a
               key={label}
               href={href}
               target={newTab ? '_blank' : undefined}
               rel={newTab ? 'noopener noreferrer' : undefined}
               className="min-w-[11rem] text-center bg-background text-primary text-xl px-6 py-2 rounded font-semibold border-2 border-primary
-                            hover:bg-primary hover:text-background transition-all duration-200 ease-in-out"
+                        hover:bg-primary hover:text-background transition-all duration-200 ease-in-out"
             >
               {label}
             </a>
@@ -76,11 +69,12 @@ function Hero() {
           </p>
         </div>
 
-        {/* Bouncing Arrow Button (Centered) */}
-        {isVisible && (
+        {/* Bouncing Arrow Button */}
+        {showArrow && (
           <div className="fixed bottom-1 left-0 w-full flex justify-center">
             <a
               href="#About"
+              onClick={handleArrowClick}
               className="animate-bounce text-primary hover:text-accent transition"
               aria-label="Scroll down"
             >
