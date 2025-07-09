@@ -80,7 +80,7 @@ function Experience() {
                 {experiences.map((exp, idx) => (
                     <div
                         key={idx}
-                        className="mb-10 p-6 border border-primary rounded-xl shadow hover:shadow-lg transition-all duration-300 ease-in-out"
+                        className="mb-10 p-4 border border-primary rounded-xl shadow hover:shadow-lg transition-all duration-300 ease-in-out"
                     >
                         <div className="flex flex-col md:flex-row gap-6">
                             {/* Left column: logo, title, company, dates, skills */}
@@ -109,7 +109,7 @@ function Experience() {
                                 </div>
 
                                 {/* Skills Used */}
-                                <div className="flex gap-4 flex-wrap">
+                                <div className="flex gap-5 flex-wrap">
                                     {exp.skillsUsed.map((skillName) => {
                                         const Icon = skillIconMap[skillName];
                                         return (
