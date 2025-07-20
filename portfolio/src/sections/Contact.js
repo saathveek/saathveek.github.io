@@ -55,24 +55,6 @@ function Contact() {
                         </form>
                     </div>
 
-                    {/* Right: LinkedIn badge */}
-                    <div className="flex-shrink-0">
-                        <script
-                            src="https://platform.linkedin.com/badges/js/profile.js"
-                            async
-                            defer
-                            type="text/javascript"
-                        ></script>
-                        <div
-                            className="badge-base LI-profile-badge"
-                            data-locale="en_US"
-                            data-size="large"
-                            data-theme="dark"
-                            data-type="HORIZONTAL"
-                            data-vanity="saathveek"
-                            data-version="v1"
-                        ></div>
-                    </div>
                 </div>
             </div>
         </section>
