@@ -57,7 +57,7 @@ function Skills() {
         </h1>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-[repeat(auto-fit,_minmax(7rem,_7rem))] gap-9 justify-center mx-auto w-full">
+        <div className="grid grid-cols-[repeat(auto-fit,_minmax(7rem,_7rem))] gap-10 justify-center mx-auto w-full">
           {skills_displayed.map((skill) => (
             <div
               key={skill.name}
