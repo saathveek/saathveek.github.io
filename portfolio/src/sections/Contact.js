@@ -1,65 +1,75 @@
 import React from 'react';
 
-// TODO: Replace with EmailJS or similar service for better email handling
 function Contact() {
-    return (
-        <section id="Contact" className="py-16 bg-background text-left scroll-mt-8">
-            <div className="max-w-5xl mx-auto">
-                {/* Section title + message */}
-                <h1 className="text-6xl font-semibold text-primary mb-4">
-                    Contact Me
-                </h1>
-                <p className="mb-12 text-text max-w-2xl">
-                    Have a question or an interesting opportunity? Send me a message and I'll get back to you as soon as possible!
-                </p>
+  return (
+    <section
+      id="Contact"
+      className="flex flex-col items-center justify-center py-16 px-6 bg-background text-left scroll-mt-8"
+    >
+      {/* Title + message */}
+      <div className="max-w-5xl w-full text-left">
+        <h1 className="text-6xl font-semibold text-primary mb-4">
+          Contact Me
+        </h1>
+        <p className="text-text w-64 sm:w-80 md:w-96 md:w-[26rem] pl-1">
+        Have a question or an interesting opportunity? Send me a message and I'll get back to you as soon as possible!
+        </p>
+      </div>
 
-                {/* Form + LinkedIn badge side by side */}
-                <div className="flex flex-col md:flex-row justify-between items-start gap-12">
-                    {/* Left: Form */}
-                    <div className="flex-1">
-                        <form
-                            action="https://formspree.io/f/xanjeqav"
-                            method="POST"
-                            className="space-y-4"
-                        >
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                required
-                                placeholder="Name"
-                                className="w-full px-2 py-2 rounded bg-background_muted text-text"
-                            />
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                required
-                                placeholder="Email"
-                                className="w-full px-2 py-2 rounded bg-background_muted text-text"
-                            />
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="4"
-                                required
-                                placeholder="Your message here..."
-                                className="w-full px-2 py-2 rounded bg-background_muted text-text"
-                            />
-                            <button
-                                type="submit"
-                                className="bg-blue-600 text-white px-4 py-2 rounded"
-                            >
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
+      {/* Content section: photo + form */}
+      <div className="flex flex-col md:flex-row justify-center items-center gap-12 w-full max-w-5xl">
+        
+        {/* Left: Photo */}
+        <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-[28rem] md:w-[26rem] flex-shrink-0 flex items-center justify-center">
+          <img
+            src="/Saathveek_Gowrishankar_Photo_mic.png"
+            alt="Saathveek delivering a speech at a podium"
+            className="w-full h-full object-contain"
+          />
+        </div>
 
-                </div>
-            </div>
-        </section>
-    );
+        {/* Right: Form (centered to match image height) */}
+        <div className="flex-1 w-full md:h-[28rem] flex items-center">
+          <form
+            action="https://formspree.io/f/xanjeqav"
+            method="POST"
+            className="w-full space-y-4"
+          >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Name"
+              className="w-full px-4 py-3 rounded bg-background_muted text-text"
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Email"
+              className="w-full px-4 py-3 rounded bg-background_muted text-text"
+            />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Your message here..."
+              className="w-full px-4 py-3 rounded bg-background_muted text-text resize-none"
+            />
+            <button
+              type="submit"
+              className="bg-primary text-white px-6 py-3 rounded font-semibold hover:bg-primary/80 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Contact;
-
