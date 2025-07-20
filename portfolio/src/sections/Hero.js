@@ -27,14 +27,20 @@ function Hero() {
         <img
           src="/Saathveek_Gowrishankar_Photo_head.png"
           alt="Saathveek"
-          className="rounded-full w-48 h-48 mx-auto mb-6 border-4 border-primary"
+          className=" w-40 h-40 
+                      sm:w-48 sm:h-48 
+                      rounded-full mx-auto mb-6 border-4 border-primary"
         />
 
         {/* Intro Text */}
-        <h1 className="text-5xl text-text mb-2">
+        <h1 className=" text-3xl
+                        sm:text-5xl
+                        text-text mb-2">
           Hello, I'm <span className="text-primary">Saathveek</span>.
         </h1>
-        <h1 className="text-5xl text-text mb-8">
+        <h1 className=" text-3xl
+                        sm:text-5xl
+                        text-text mb-8">
           I'm a computer&nbsp;engineer and data&nbsp;scientist.
         </h1>
 
@@ -54,8 +60,11 @@ function Hero() {
               href={href}
               target={newTab ? '_blank' : undefined}
               rel={newTab ? 'noopener noreferrer' : undefined}
-              className="min-w-[11rem] text-center bg-background text-primary text-xl px-6 py-2 rounded font-semibold border-2 border-primary
-                        hover:bg-primary hover:text-background transition-all duration-200 ease-in-out"
+              className=" min-w-[9rem] text-base px-4 py-1.5
+                          sm:min-w-[11rem] sm:text-xl sm:px-6 sm:py-2 
+                          text-center bg-background text-primary
+                          rounded font-semibold border-2 border-primary
+                          hover:bg-primary hover:text-background transition-all duration-200 ease-in-out"
             >
               {label}
             </a>
@@ -86,7 +95,8 @@ function Hero() {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="size-12"
+                className=" size-8
+                            sm:size-12"
               >
                 <path
                   strokeLinecap="round"
