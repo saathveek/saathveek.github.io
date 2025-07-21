@@ -10,7 +10,9 @@ function About() {
       <div className="max-w-xl">
 
         {/* Header */}
-        <h1 className="text-6xl font-semibold text-primary mb-6">
+        <h1 className="text-4xl
+                       md:text-6xl
+                       font-semibold text-primary mb-6">
           About Me
         </h1>
 

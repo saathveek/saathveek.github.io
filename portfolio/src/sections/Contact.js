@@ -4,23 +4,25 @@ function Contact() {
   return (
     <section
       id="Contact"
-      className="flex flex-col items-center justify-center py-16 px-6 bg-background text-left scroll-mt-8"
+      className="flex flex-col items-center justify-center p-8 bg-background text-left scroll-mt-8"
     >
       {/* Title + message */}
       <div className="max-w-5xl w-full text-left">
-        <h1 className="text-6xl font-semibold text-primary mb-4">
+        <h1 className="text-4xl
+                       md:text-6xl 
+                       font-semibold text-primary">
           Contact Me
         </h1>
-        <p className="text-text w-64 sm:w-80 md:w-96 md:w-[26rem] pl-1">
+        {/* <p className="text-text w-64 sm:w-80 md:w-96 md:w-[26rem] pl-1">
         Have a question or an interesting opportunity? Send me a message and I'll get back to you as soon as possible!
-        </p>
+        </p> */}
       </div>
 
       {/* Content section: photo + form */}
-      <div className="flex flex-col md:flex-row justify-center items-center gap-12 w-full max-w-5xl">
+      <div className="flex flex-col md:flex-row gap-12 w-full max-w-5xl">
         
         {/* Left: Photo */}
-        <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-[28rem] md:w-[26rem] flex-shrink-0 flex items-center justify-center">
+        <div className="w-64 h-64 sm:w-80 sm:h-80 md:h-[28rem] md:w-[26rem] flex-shrink-0 flex">
           <img
             src="/Saathveek_Gowrishankar_Photo_mic.png"
             alt="Saathveek delivering a speech at a podium"
@@ -40,7 +42,7 @@ function Contact() {
               id="name"
               name="name"
               required
-              placeholder="Name"
+              placeholder="Your name"
               className="w-full px-4 py-3 rounded bg-background_muted text-text"
             />
             <input
@@ -48,7 +50,7 @@ function Contact() {
               id="email"
               name="email"
               required
-              placeholder="Email"
+              placeholder="Your email"
               className="w-full px-4 py-3 rounded bg-background_muted text-text"
             />
             <textarea
@@ -57,11 +59,11 @@ function Contact() {
               rows="5"
               required
               placeholder="Your message here..."
-              className="w-full px-4 py-3 rounded bg-background_muted text-text resize-none"
+              className="w-full px-4 py-3 rounded bg-background_muted text-text"
             />
             <button
               type="submit"
-              className="bg-primary text-white px-6 py-3 rounded font-semibold hover:bg-primary/80 transition"
+              className="bg-primary text-bg px-6 py-3 rounded font-semibold hover:bg-primary/80 transition"
             >
               Send Message
             </button>

@@ -50,7 +50,9 @@ function Projects() {
   return (
     <section id="Projects" className="bg-background p-8 scroll-mt-8">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-6xl font-semibold text-primary mb-12 text-left">
+        <h1 className="text-4xl
+                       md:text-6xl
+                       font-semibold text-primary mb-6">
           My Favorite Projects
         </h1>
 

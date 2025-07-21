@@ -8,7 +8,7 @@ function Navbar() {
                     <img 
                         src="/logo_sg.png" 
                         alt="Logo" 
-                        className="h-8 w-8 object-contain drop-shadow-[0_0_2px_white]" 
+                        className="h-9 w-9 object-contain drop-shadow-[0_0_2px_white]" 
                     />
                     <span className="font-greatvibes text-text text-lg sm:text-3xl">Saathveek&nbsp;Gowrishankar</span>
 

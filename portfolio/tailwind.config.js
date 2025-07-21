@@ -10,6 +10,11 @@ module.exports = {
         greatvibes: ['"Great Vibes"', 'cursive'],
         // ...other fonts if any
       },
+      fontSize: {
+        '2xs': '0.625rem', // 10px
+        '3xs': '0.5rem', // 8px
+
+      },
       colors: {
         primary: "#5cbad0",      // Light blue
         secondary: "#eddf93",    // Cream

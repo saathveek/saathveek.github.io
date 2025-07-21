@@ -52,22 +52,36 @@ function Skills() {
     <section id="Skills" className="flex flex-col items-center p-8 bg-background scroll-mt-8">
       <div className="max-w-5xl mx-auto w-full text-left">
         {/* Heading */}
-        <h1 className="text-6xl font-semibold text-primary mb-12 text-left">
+        <h1 className="text-4xl
+                       md:text-6xl
+                       font-semibold text-primary mb-6">
           My Skills
         </h1>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-[repeat(auto-fit,_minmax(7rem,_7rem))] gap-10 justify-center mx-auto w-full">
+        <div className="grid grid-cols-[repeat(auto-fit,_minmax(6rem,_1fr))] 
+                        gap-4
+                        md:gap-10 justify-center mx-auto w-full">
           {skills_displayed.map((skill) => (
             <div
               key={skill.name}
-              className="w-28 h-28 flex flex-col items-center justify-center border-2 border-primary 
-             rounded-xl shadow group transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md"
+              className=" w-24 h-24
+                          md:w-28 md:h-28 
+                          flex flex-col items-center justify-center 
+                          border-2 border-primary rounded-xl shadow group 
+                          transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md"
             >
-              <div className="text-6xl text-primary transition-transform duration-300 ease-in-out group-hover:scale-105">
+              <div className="text-5xl
+                              md:text-6xl
+                              text-primary 
+                              transition-transform duration-300 ease-in-out group-hover:scale-105">
                 <skill.icon />
               </div>
-              <span className="text-xs mt-2 text-text transition-opacity duration-300 ease-in-out group-hover:opacity-90">
+              <span className="text-2xs
+                               md:text-xs 
+                               mt-2 
+                               text-text 
+                               transition-opacity duration-300 ease-in-out group-hover:opacity-90">
                 {skill.name}
               </span>
             </div>

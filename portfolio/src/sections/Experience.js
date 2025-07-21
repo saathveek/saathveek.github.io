@@ -34,8 +34,8 @@ const experiences = [
         dateRange: "May to August 2024",
         location: "New York, NY",
         skillsUsed: [
-            "Python", 
-            "Azure DevOps", 
+            "Python",
+            "Azure DevOps",
             "Git",
             "OpenAI API",
             "JavaScript",
@@ -89,7 +89,9 @@ function Experience() {
             className="flex flex-col items-start justify-center p-8 bg-background scroll-mt-8"
         >
             <div className="max-w-5xl w-full mx-auto text-left">
-                <h1 className="text-6xl font-semibold text-primary mb-10">
+                <h1 className="text-4xl
+                               md:text-6xl
+                               font-semibold text-primary mb-6">
                     My Experience
                 </h1>
 
@@ -104,43 +106,70 @@ function Experience() {
                                 <div className="flex items-start gap-4">
                                     {/* Company Logo with link */}
                                     <a href={exp.companyLink} target="_blank" rel="noopener noreferrer">
-                                        <img
-                                            src={exp.logo}
-                                            alt={`${exp.companyName} logo`}
-                                            className="w-24 h-24 object-contain rounded-md bg-white border border-white border-2 transition-transform duration-300 ease-in-out hover:scale-105"
-                                        />
+                                        <div className="w-16 h-16 
+                                                        md:w-24 md:h-24 
+                                                        flex items-center justify-center 
+                                                        bg-white 
+                                                        border-2 border-white rounded-md
+                                                        mt-1">
+                                            <img
+                                                src={exp.logo}
+                                                alt={`${exp.companyName} logo`}
+                                                className="max-w-full max-h-full object-contain"
+                                            />
+                                        </div>
                                     </a>
                                     {/* Role, company title, date, location */}
                                     <div className="flex flex-col justify-start">
-                                        <h2 className="text-2xl font-bold text-primary">
+                                        <h2 className="text-xl
+                                                       md:text-2xl
+                                                       font-bold text-primary">
                                             {exp.roleTitle}
                                         </h2>
-                                        <p className="text-text font-semibold text-lg">
-                                            {exp.companyName}
-                                        </p>
-                                        <p className="text-text">
+                                        <a href={exp.companyLink} target="_blank" rel="noopener noreferrer">
+                                            <p className="text-sm
+                                                        md:text-lg
+                                                        text-text font-semibold">
+                                                {exp.companyName}
+                                            </p>
+                                        </a>
+                                        <p className="text-sm
+                                                      md:text-base
+                                                      text-text">
                                             {exp.dateRange} • {exp.location}
                                         </p>
                                     </div>
                                 </div>
 
                                 {/* Skills Used */}
-                                <div className="flex gap-6 flex-wrap">
+                                <div className="gap-3 
+                                                sm:gap-4
+                                                justify-start
+                                                flex flex-wrap
+                                                ">
                                     {exp.skillsUsed.map((skillName) => {
                                         const Icon = skillIconMap[skillName];
                                         return (
                                             Icon && (
                                                 <div
                                                     key={skillName}
-                                                    className="w-16 h-16 mt-6 flex items-center justify-center border border-primary rounded-md hover:scale-105 transition-transform duration-150 relative group"
+                                                    className="w-12 h-12 mt-4 
+                                                               sm:w-16 sm:h-16 
+                                                               md:w-18 md:h-18 md:mt-6 
+                                                               flex items-center justify-center
+                                                               border border-primary rounded-md 
+                                                               hover:scale-105 transition-transform duration-150 relative group"
                                                 >
                                                     {/* Icon */}
-                                                    <div className="text-4xl text-primary">
+                                                    <div className="text-2xl
+                                                                    sm:text-4xl
+                                                                    md:text-4xl 
+                                                                    text-primary">
                                                         <Icon />
                                                     </div>
 
-                                                    {/* Tooltip (scoped to this icon only) */}
-                                                    <div className="absolute top-[-2rem] left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none z-10">
+                                                    {/* Tooltip */}
+                                                    <div className="absolute top-[-2rem] left-1/2 -translate-x-1/2 bg-black text-white text-2xs md:text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none z-10">
                                                         {skillName}
                                                     </div>
                                                 </div>
@@ -155,7 +184,9 @@ function Experience() {
                             {/* Right column: Summary */}
                             <div className="md:w-1/2">
                                 {exp.summary.map((line, i) => (
-                                    <p key={i} className="text-text text-lg mb-2">
+                                    <p key={i} className="text-sm
+                                                          md:text-lg 
+                                                          text-text mb-2">
                                         {line}
                                     </p>
                                 ))}

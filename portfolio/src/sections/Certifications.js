@@ -63,12 +63,14 @@ function Certifications() {
     <section id="Certifications" className="bg-background p-8 scroll-mt-8">
       <div className="max-w-5xl mx-auto w-full text-left">
         {/* Section Title */}
-        <h1 className="text-6xl font-semibold text-primary mb-12 text-left">
+        <h1 className="text-4xl 
+                       md:text-6xl
+                       font-semibold text-primary mb-6">
           My Certifications
         </h1>
 
         {/* Certificate Cards */}
-        <div className="grid grid-cols-3 gap-6 justify-items-center max-w-5xl w-full mx-auto">
+        <div className="grid grid-cols-3 gap-10 justify-items-center max-w-5xl w-full mx-auto">
           {certifications.map((cert, idx) => (
             <CertificationCard key={idx} cert={cert} />
           ))}
