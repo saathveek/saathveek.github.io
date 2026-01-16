@@ -8,8 +8,13 @@ const certifications = [
     link: "/Saathveek_Gowrishankar_Cert_uiuc_ds.pdf",
   },
   {
-    title: "AWS Cloud Practitioner Certification",
-    certifier: "Coming soon",
+    title: "Bachelor of Science in Computer Engineering",
+    certifier: "Coming soon - May 2026",
+    isPlaceholder: true,
+  },
+  {
+    title: "Minor in Data Science",
+    certifier: "Coming soon - May 2026",
     isPlaceholder: true,
   },
   // {

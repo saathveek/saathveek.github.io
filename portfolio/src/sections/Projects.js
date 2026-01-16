@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Embedded Keyword Spotting with Tiny\u00A0Machine Learning",
     link: "https://github.com/saathveek/embedded-tiny-ml-keyword-spotting",
-    image: "/project_tinyml.jpg",
+    image: "/project_ntu.webp",
     description: [
       "I designed real-time voice recognition for five standard commands (e.g. \"forward\", \"stop\") for use in interactive IoT applications, such as robots and wearables.",
       "To deploy the project on a resource-constrained microcontroller, I trained a neural network using TensorFlow Lite and optimized the model with weight quantization.",
@@ -22,9 +22,8 @@ const projects = [
   },
   {
     title: "An ML Approach to Understanding Older Adults' Perspectives",
-    link: "/project_tinyml.jpg",
-    
-    image: "/",
+    link: "https://github.com/saathveek/ml-predicting-older-adult-trust",
+    image: "/project_hfa_2.png",
     description: [
       "I developed LASSO and RIDGE regression models to predict older adults' trust in novel assistive robots based on their familiarity with other technologies.",
       "The resulting insights offer a data-driven foundation for how to design more trustworthy, user-centered  robots that support aging in place."
@@ -67,7 +66,7 @@ function Projects() {
                 <img
                   src={project.image}
                   alt={`${project.title} preview`}
-                  className="w-full h-48 object-cover bg-background_muted"
+                  className="w-full h-44 flex object-cover bg-white"
                 />
               )}
 
