@@ -4,8 +4,8 @@ const certifications = [
   {
     title: "Certificate in Data Science",
     certifier: "University of Illinois Urbana-Champaign",
-    imgSrc: "/Saathveek_Gowrishankar_Cert_uiuc_ds.png",
-    link: "/Saathveek_Gowrishankar_Cert_uiuc_ds.pdf",
+    imgSrc: "/Saathveek_Gowrishankar_cert_uiuc_ds.png",
+    link: "/Saathveek_Gowrishankar_cert_uiuc_ds.pdf",
   },
   {
     title: "Bachelor of Science in Computer Engineering",

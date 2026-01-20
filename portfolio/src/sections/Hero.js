@@ -25,7 +25,7 @@ function Hero() {
       <div className="max-w-6xl w-full text-center relative">
         {/* Profile Picture */}
         <img
-          src="/Saathveek_Gowrishankar_Photo_head.png"
+          src="/Saathveek_Gowrishankar_photo_head.png"
           alt="Saathveek"
           className=" w-40 h-40 
                       sm:w-48 sm:h-48 
