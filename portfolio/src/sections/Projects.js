@@ -38,6 +38,23 @@ const projects = [
     ],
   },
   {
+    title: "Custom Linux-style Operating System with RISC-V",
+    link: "",
+    image: "/project_os.png",
+    description: [
+      "I implemented a persistent storage-backed read/write filesystem and multithreading support for a custom Linux-style operating system from scratch.",
+      "This project was completed using C and RISC-V assembly as a requirement for a group project in ECE 391: Computer Systems Engineering at UIUC.",
+    ],
+    skillsUsed: [
+      "C",
+      "RISC-V Assembly",
+      "Operating Systems",
+      "GDB Debugger",
+      "Git",
+      
+    ],
+  },
+  {
     title: "An ML Approach to Understanding Older Adults' Perspectives",
     link: "https://github.com/saathveek/ml-predicting-older-adult-trust",
     image: "/project_hfa_2.png",
