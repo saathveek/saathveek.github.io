@@ -45,7 +45,7 @@ const experiences = [
         companyLink: "http://ischool.illinois.edu/people/haileleol-tibebu",
         roleTitle: "LLM Linguistic Resource Researcher",
         summary: ["On this team, I investigated data scarcity in LLM training data for over 80 languages to help identify challenges in equitable AI development.",
-            "I worked closely with Dr. Tibebu to develop creative and appropriate sampling methods "
+            "I worked closely with Dr. Tibebu to develop creative and appropriate sampling methods, enabling realistic and representative sampling of vast datasets."
         ],
         logo: "/logo_ischool.png",
         dateRange: "January 2026 to Present",
