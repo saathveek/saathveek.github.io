@@ -67,8 +67,8 @@ const projects = [
       "Python", 
       "statsmodels", 
       "scikit learn",
-      "Matplotlib",      
-      "Formal Presentation",
+      "Cross-Functional Collaboration",      
+      "Formal Presentations",
     ],
   },
 ];

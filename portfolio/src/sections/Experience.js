@@ -10,7 +10,7 @@ const experiences = [
             "I automated Dynatrace problem monitoring, boosting time and resource efficiency by over 60% across existing implementations."
         ],
         logo: "/logo_bcbs.jpg",
-        dateRange: "Since May 2025",
+        dateRange: "May to August 2025",
         location: "Chicago, IL",
         skillsUsed: [
             "Machine Learning",
@@ -19,8 +19,6 @@ const experiences = [
             "PySpark",
             "SQL",
             "Power BI",
-            // "Dynatrace",
-            // "Excel",
         ]
     },
     {
@@ -43,17 +41,22 @@ const experiences = [
         ]
     },
     {
-        companyName: "Engineers Without Borders UIUC",
-        companyLink: "https://www.ewbuiuc.org/",
-        roleTitle: "President and Advisor",
-        summary: ["At EWB-UIUC, I led 20+ student leaders and 170+ members advancing context-driven engineering solutions helping 20,000+ people across 4 countries.",
-            "As President, I pioneered a membership incentive program and a workshop series focused on leadership, learning, and member enrichment."
+        companyName: "UIUC School of Information Sciences",
+        companyLink: "http://ischool.illinois.edu/people/haileleol-tibebu",
+        roleTitle: "LLM Linguistic Resource Researcher",
+        summary: ["On this team, I investigated data scarcity in LLM training data for over 80 languages to help identify challenges in equitable AI development.",
+            "I worked closely with Dr. Tibebu to develop creative and appropriate sampling methods "
         ],
-        logo: "/logo_ewb.jfif",
-        dateRange: "January 2024 to Present",
+        logo: "/logo_ischool.png",
+        dateRange: "January 2026 to Present",
         location: "Urbana-Champaign, IL",
         skillsUsed: [
-            "Contextual Engineering"
+            "Python",
+            "Research",
+            "Technical Writing",
+            "Leadership",
+            "Git",
+            "Formal Presentations"
         ]
     },
     {
@@ -61,18 +64,37 @@ const experiences = [
         companyLink: "https://hfaging.ahs.illinois.edu/",
         roleTitle: "Human-Robot Interaction Researcher",
         summary: ["At HFA, I co-authored a pending publication and conducted two symposium presentations on how older adults trust and interact with assistive robots.",
-            "I automated data pipelines, modeled trust patterns, and shaped foundations for future human-centered assistive technology design."
+            "I automated data pipelines, modeled trust patterns, and helped shape foundations for future human-centered assistive technology design."
         ],
         logo: "/logo_hfa.png",
-        dateRange: "August 2022 to Present",
+        dateRange: "August 2022 to August 2025",
         location: "Urbana-Champaign, IL",
         skillsUsed: [
             "Python",
             "scikit learn",
             "statsmodels",
             "Excel",
-            "Matplotlib",
+            "Technical Writing",
             "ACM Publication",
+        ]
+    },
+    {
+        companyName: "Engineers Without Borders UIUC",
+        companyLink: "https://www.ewbuiuc.org/",
+        roleTitle: "President and Advisor",
+        summary: ["At EWB-UIUC, I led 22 student leaders and 170+ members advancing context-driven engineering solutions helping 25,000+ people across 4 countries.",
+            "As President, I pioneered a membership incentive program and a workshop series focused on leadership, learning, and member enrichment."
+        ],
+        logo: "/logo_ewb.jfif",
+        dateRange: "January 2024 to Present",
+        location: "Urbana-Champaign, IL",
+        skillsUsed: [
+            "Contextual Engineering",
+            "Leadership",
+            "Cross-Functional Collaboration",
+            "Nonprofit Volunteering",
+            "Stakeholder Engagement",
+            "Fundraising and Grants"
         ]
     },
 ]
