@@ -1,50 +1,65 @@
 import React from 'react';
-import { SiPython, SiCplusplus, SiReact, SiTensorflow, SiGit, SiDatabricks, SiDynatrace, SiOpenai, SiKeras, SiDocker, SiScikitlearn, SiApachespark, SiAcm } from 'react-icons/si'; //https://react-icons.github.io/react-icons/icons/si/
-import { VscAzureDevops } from 'react-icons/vsc';
+import { SiAcm, SiApachespark, SiC, SiCplusplus, SiDatabricks, SiDocker, SiDynatrace, SiGit, SiGnu, SiLinux, 
+          SiOpenai, SiKeras, SiPython, SiReact, SiRiscv, SiScikitlearn, SiTensorflow, } 
+          from 'react-icons/si'; //https://react-icons.github.io/react-icons/icons/si/
+import { FaHandsHelping, FaSearch } from 'react-icons/fa';
+import { FaHandHoldingDollar, FaUsersGear, FaMagnifyingGlassChart } from 'react-icons/fa6';
+import { GiTeamUpgrade } from 'react-icons/gi';
+import { IoLogoJavascript, IoLogoMicrosoft  } from 'react-icons/io5';
+import { MdDraw, MdGroups3, MdQueryStats } from "react-icons/md";
 import { PiMicrosoftExcelLogo, PiFileSql } from 'react-icons/pi';
-import { IoLogoMicrosoft, IoLogoJavascript } from 'react-icons/io5';
-import { FaUsersGear, FaMagnifyingGlassChart } from 'react-icons/fa6';
-import { MdQueryStats } from "react-icons/md";
-import { RiPresentationLine } from "react-icons/ri";
-// import { GiArtificialIntelligence } from "react-icons/gi";
+import { RiPresentationLine, RiTeamFill } from "react-icons/ri";
+import { VscAzureDevops } from 'react-icons/vsc';
+import { GiArtificialIntelligence } from "react-icons/gi";
 import { IoStatsChart } from "react-icons/io5";
 
 export const skills_displayed = [
+  // Programming
+  { name: 'Python', icon: SiPython },
+  { name: 'C++', icon: SiCplusplus },
+  { name: 'C', icon: SiC},
+  { name: 'Assembly', icon: SiRiscv},
+  { name: 'LLM Integration', icon: GiArtificialIntelligence },
+  { name: 'Git', icon: SiGit },
+  { name: 'Azure DevOps', icon: VscAzureDevops },
   // ML + DS
   { name: 'Mach. Learning', icon: MdQueryStats },
-  { name: 'Python', icon: SiPython },
   { name: 'Tensorflow', icon: SiTensorflow },
   { name: 'statsmodels', icon: IoStatsChart },
   { name: 'scikit learn', icon: SiScikitlearn },
-
-  // Big Data
-  { name: 'PySpark', icon: SiApachespark },
   { name: 'Databricks', icon: SiDatabricks },
-
-  // Programming
-  { name: 'C++', icon: SiCplusplus },
-  { name: 'JavaScript', icon: IoLogoJavascript },
-  { name: 'Azure DevOps', icon: VscAzureDevops },
-  { name: 'Git', icon: SiGit },
-
-  // BI and reporting
-  { name: 'SQL', icon: PiFileSql },
-  { name: 'Power BI', icon: IoLogoMicrosoft },
-  { name: 'Matplotlib', icon: FaMagnifyingGlassChart},
+  
+  // Soft Skills
+  { name: 'Leadership', icon: RiTeamFill},
+  { name: 'Nonprofits', icon: FaHandsHelping},
 ];
 
 export const skills_all = [
   ...skills_displayed,
-  { name: 'Machine Learning', icon: MdQueryStats },
+  { name: 'ACM Publication', icon: SiAcm },
+  { name: 'Cross-Functional Collaboration', icon: MdGroups3},
   { name: 'Contextual Engineering', icon: FaUsersGear },
-  { name: 'OpenAI API', icon: SiOpenai },
   { name: 'Docker', icon: SiDocker },
   { name: 'Dynatrace', icon: SiDynatrace },
-  { name: 'Keras', icon: SiKeras },
-  { name: 'React', icon: SiReact },
   { name: 'Excel', icon: PiMicrosoftExcelLogo },
-  { name: 'ACM Publication', icon: SiAcm },
-  { name: 'Formal Presentation', icon: RiPresentationLine}
+  { name: 'Formal Presentations', icon: RiPresentationLine},
+  { name: 'Fundraising and Grants', icon: FaHandHoldingDollar},
+  { name: 'GDB Debugger', icon: SiGnu},
+  { name: 'JavaScript', icon: IoLogoJavascript },
+  { name: 'Keras', icon: SiKeras },
+  { name: 'Machine Learning', icon: MdQueryStats },
+  { name: 'Matplotlib', icon: FaMagnifyingGlassChart},
+  { name: 'Nonprofit Volunteering', icon: FaHandsHelping},
+  { name: 'OpenAI API', icon: SiOpenai },
+  { name: 'Operating Systems', icon: SiLinux},
+  { name: 'Power BI', icon: IoLogoMicrosoft },
+  { name: 'PySpark', icon: SiApachespark },
+  { name: 'React', icon: SiReact },
+  { name: 'Research', icon: FaSearch },
+  { name: 'RISC-V Assembly', icon: SiRiscv},
+  { name: 'SQL', icon: PiFileSql },
+  { name: 'Stakeholder Engagement', icon:  GiTeamUpgrade},
+  { name: 'Technical Writing', icon: MdDraw},
 ]
 
 function Skills() {
