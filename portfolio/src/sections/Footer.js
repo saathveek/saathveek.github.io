@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiOrcid } from "react-icons/si";
 import { IoIosMail } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
 
@@ -29,6 +29,14 @@ function Footer() {
                         <IoIosMail />
                     </a>
                     <a
+                        href="https://linkedin.com/in/saathveek"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-2xl hover:text-primary transition-colors"
+                    >
+                        <SiLinkedin />
+                    </a>
+                    <a
                         href="https://github.com/saathveek"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -37,12 +45,12 @@ function Footer() {
                         <SiGithub />
                     </a>
                     <a
-                        href="https://linkedin.com/in/saathveek"
+                        href="https://orcid.org/0009-0002-6201-2974"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-2xl hover:text-primary transition-colors"
                     >
-                        <SiLinkedin />
+                        <SiOrcid />
                     </a>
                 </div>
             </div>

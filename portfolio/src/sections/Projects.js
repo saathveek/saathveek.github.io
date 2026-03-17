@@ -4,6 +4,23 @@ import { skills_all } from "./Skills.js";
 // Example projects array
 const projects = [
   {
+    title: "Publication: \"Robots for Older Adults: A Scoping Review\"",
+    link: "https://doi.org/10.1145/3799977",
+    image: "/project_acm.png",
+    description: [
+      "I co-authored a scoping review analyzing the development of robots for older adults, published in the peer-reviewed ACM Transactions on Human-Robot Interaction.",
+      "The paper elucidates trends and gaps over 12 years of research to identify potential advancements in how robots can better support older adults.",
+    ],
+    skillsUsed: [
+      "ACM Publication",
+      "Cross-Functional Collaboration",
+      "Research",
+      "Technical Writing",
+      "Excel",
+      "Python"
+    ],
+  },
+  {
     title: "Embedded Keyword Spotting with Tiny\u00A0Machine Learning",
     link: "https://github.com/saathveek/embedded-tiny-ml-keyword-spotting",
     image: "/project_ntu.webp",
