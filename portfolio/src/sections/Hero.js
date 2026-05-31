@@ -20,32 +20,31 @@ function Hero() {
   return (
     <section
       id="Hero"
-      className="min-h-screen flex items-center justify-center p-8 bg-background"
+      className="min-h-screen flex items-center justify-center px-6 py-10 sm:py-14 bg-background"
     >
-      <div className="max-w-6xl w-full text-center relative">
-        {/* Profile Picture */}
-        <img
-          src="/Saathveek_Gowrishankar_photo_head.png"
-          alt="Saathveek"
-          className=" w-40 h-40 
-                      sm:w-48 sm:h-48 
-                      rounded-full mx-auto mb-6 border-4 border-primary"
-        />
+      <div className="max-w-6xl w-full relative">
+        <div className="flex flex-col md:flex-row md:items-center gap-10 md:gap-14">
+          <div className="flex justify-center md:justify-start md:w-auto">
+            <img
+              src="/Saathveek_Gowrishankar_photo_head.png"
+              alt="Saathveek"
+              className="w-36 h-36 sm:w-44 sm:h-44 md:w-56 md:h-56 rounded-full border-4 border-primary/90 shadow-[0_0_0_6px_rgba(92,186,208,0.12)] object-cover"
+            />
+          </div>
 
-        {/* Intro Text */}
-        <h1 className=" text-3xl
-                        sm:text-5xl
-                        text-text mb-2">
-          Hello, I'm <span className="text-primary">Saathveek</span>.
-        </h1>
-        <h1 className=" text-3xl
-                        sm:text-5xl
-                        text-text mb-8">
-          I'm a computer&nbsp;engineer and data&nbsp;scientist.
-        </h1>
+          <div className="text-center md:text-left max-w-3xl">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl text-text font-normal tracking-tight mb-4">
+              Hello, I'm <span className="text-primary">Saathveek</span>.
+            </h1>
+            <p className="text-base sm:text-lg uppercase tracking-[0.14em] text-text/75 mb-5">
+              Computer Engineer and Data Scientist
+            </p>
+            <p className="text-sm sm:text-lg leading-relaxed text-text/85 max-w-2xl md:max-w-none mb-9">
+              Recent UIUC graduate interested in software development, machine learning, ethical AI, and research that solves real-world problems.
+            </p>
 
-        {/* CTA Buttons */}
-        <div className="flex justify-center gap-4">
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-3 sm:gap-4">
           {[{
             label: 'View Resume',
             href: '/Saathveek_Gowrishankar_Resume.pdf',
@@ -60,15 +59,17 @@ function Hero() {
               href={href}
               target={newTab ? '_blank' : undefined}
               rel={newTab ? 'noopener noreferrer' : undefined}
-              className=" min-w-[9rem] text-base px-4 py-1.5
-                          sm:min-w-[11rem] sm:text-xl sm:px-6 sm:py-2 
-                          text-center bg-background text-primary
-                          rounded font-semibold border-2 border-primary
-                          hover:bg-primary hover:text-background transition-all duration-200 ease-in-out"
+              className={`min-w-[11rem] text-base sm:text-lg px-6 py-2.5 text-center rounded font-semibold border-2 transition-all duration-200 ease-in-out ${
+                label === 'View Resume'
+                  ? 'bg-primary text-background border-primary hover:brightness-110'
+                  : 'bg-transparent text-primary border-primary hover:bg-primary hover:text-background'
+              }`}
             >
               {label}
             </a>
           ))}
+            </div>
+          </div>
         </div>
         
         {/*
@@ -82,11 +83,11 @@ function Hero() {
 
         {/* Bouncing Arrow Button */}
         {showArrow && (
-          <div className="fixed bottom-1 left-0 w-full flex justify-center">
+          <div className="fixed bottom-3 left-0 w-full flex justify-center">
             <a
               href="#About"
               onClick={handleArrowClick}
-              className="animate-bounce text-primary hover:text-accent transition"
+              className="animate-bounce text-primary/85 hover:text-accent transition"
               aria-label="Scroll down"
             >
               <svg
