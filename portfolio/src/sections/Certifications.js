@@ -4,18 +4,24 @@ const certifications = [
   {
     title: "Certificate in Data Science",
     certifier: "University of Illinois Urbana-Champaign",
+    issued: "May 2026",
     imgSrc: "/Saathveek_Gowrishankar_cert_uiuc_ds.png",
     link: "/Saathveek_Gowrishankar_cert_uiuc_ds.pdf",
   },
   {
-    title: "Bachelor of Science in Computer Engineering",
-    certifier: "Coming soon - May 2026",
-    isPlaceholder: true,
+    title: "Google AI",
+    certifier: "Google",
+    issued: "May 2026",
+    credentialId: "2HSYV74PHVM6",
+    skills: ["Artificial Intelligence (AI)"],
+    link: "https://www.coursera.org/account/accomplishments/specialization/2HSYV74PHVM6",
   },
   {
-    title: "Minor in Data Science",
-    certifier: "Coming soon - May 2026",
-    isPlaceholder: true,
+    title: "Google AI Essentials",
+    certifier: "Coursera",
+    issued: "May 2026",
+    skills: ["Artificial Intelligence (AI)"],
+    link: "https://www.credly.com/badges/cda7b5ad-d190-44b4-8769-35196c1018cf/linked_in_profile",
   },
   // {
   //   title: "Certification",
@@ -27,10 +33,45 @@ const certifications = [
 function CertificationCard({ cert }) {
   if (cert.isPlaceholder) {
     return (
-      <div className="max-w-[305px] w-full border border-dashed border-primary rounded-xl shadow bg-background_muted flex flex-col justify-center items-center text-center p-6 text-muted">
-        <p className="text-2xl font-bold mb-2">{cert.title}</p>
+      <div className="w-full min-h-[220px] border border-dashed border-primary/50 rounded-2xl bg-background_muted/30 flex flex-col justify-center items-center text-center p-6 text-muted">
+        <p className="text-2xl font-bold mb-2 text-text">{cert.title}</p>
         <p className="text-sm">{cert.certifier}</p>
+        <span className="mt-3 text-2xs uppercase tracking-wider border border-primary/50 text-primary rounded-full px-2 py-1">
+          In Progress
+        </span>
       </div>
+    );
+  }
+
+  if (!cert.imgSrc) {
+    return (
+      <a
+        href={cert.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full min-h-[220px] border border-primary/40 rounded-2xl bg-background_muted/10 hover:bg-background_muted/20 transition-all duration-300 p-6 flex flex-col"
+      >
+        <div className="flex items-center justify-between gap-3 mb-3">
+          <span className="text-2xs sm:text-xs uppercase tracking-wide text-primary/90 border border-primary/60 rounded-full px-2 py-1">
+            {cert.issued}
+          </span>
+          <span className="text-2xs sm:text-xs uppercase tracking-wide text-text/80 border border-background_muted rounded-full px-2 py-1">
+            Credential
+          </span>
+        </div>
+
+        <p className="text-2xl font-bold text-primary mb-1">{cert.title}</p>
+        <p className="text-base sm:text-lg text-text font-semibold mb-3">{cert.certifier}</p>
+        {cert.credentialId && (
+          <p className="text-base sm:text-lg text-text/80 mb-2">Credential ID: {cert.credentialId}</p>
+        )}
+        {cert.skills?.length > 0 && (
+          <p className="text-base sm:text-lg text-text/80 mb-4">Skills: {cert.skills.join(", ")}</p>
+        )}
+        <span className="mt-auto inline-flex items-center text-base sm:text-lg text-primary font-semibold">
+          View credential
+        </span>
+      </a>
     );
   }
 
@@ -40,7 +81,7 @@ function CertificationCard({ cert }) {
       href={cert.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="max-w-[305px] w-full rounded-xl overflow-hidden border border-primary shadow transition-transform duration-300 ease-in-out relative group hover:scale-[1.03]"
+      className="w-full rounded-2xl overflow-hidden border border-primary/40 transition-all duration-300 ease-in-out relative group hover:scale-[1.01]"
     >
       <div className="relative w-full h-full">
         {/* Image with dim effect on hover */}
@@ -55,7 +96,7 @@ function CertificationCard({ cert }) {
           className="absolute bottom-0 left-0 right-0 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out bg-background_muted bg-opacity-90 px-4 py-3"
         >
           <p className="font-semibold text-text text-sm mb-1">{cert.title}</p>
-          <p className="text-text text-xs">{cert.certifier}</p>
+          <p className="text-text text-xs">{cert.certifier}{cert.issued ? ` • ${cert.issued}` : ""}</p>
         </div>
       </div>
     </a>
@@ -65,17 +106,17 @@ function CertificationCard({ cert }) {
 
 function Certifications() {
   return (
-    <section id="Certifications" className="bg-background p-8 scroll-mt-8">
-      <div className="max-w-5xl mx-auto w-full text-left">
+    <section id="Certifications" className="bg-background px-6 py-12 sm:py-16 scroll-mt-8">
+      <div className="max-w-6xl mx-auto w-full text-left">
         {/* Section Title */}
         <h1 className="text-4xl 
                        md:text-6xl
-                       font-semibold text-primary mb-6">
+                       font-semibold text-primary mb-9">
           My Certifications
         </h1>
 
         {/* Certificate Cards */}
-        <div className="grid grid-cols-3 gap-10 justify-items-center max-w-5xl w-full mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full mx-auto">
           {certifications.map((cert, idx) => (
             <CertificationCard key={idx} cert={cert} />
           ))}

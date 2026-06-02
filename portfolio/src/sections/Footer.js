@@ -8,7 +8,7 @@ const version = process.env.REACT_APP_VERSION;
 function Footer() {
     return (
         <footer className="bg-background_muted text-background border-t border-background_muted px-6 py-3">
-            <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6">
 
                 {/* Left: Name, Copyright, Version */}
                 <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-2 text-sm">
