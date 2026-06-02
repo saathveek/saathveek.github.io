@@ -4,13 +4,13 @@ function Contact() {
   return (
     <section
       id="Contact"
-      className="flex flex-col items-center justify-center p-8 bg-background text-left scroll-mt-8"
+      className="bg-background px-6 py-12 sm:py-16 text-left scroll-mt-8"
     >
       {/* Title + message */}
-      <div className="max-w-5xl w-full text-left">
+      <div className="max-w-6xl mx-auto w-full text-left">
         <h1 className="text-4xl
                        md:text-6xl 
-                       font-semibold text-primary">
+                       font-semibold text-primary mb-6">
           Contact Me
         </h1>
         {/* <p className="text-text w-64 sm:w-80 md:w-96 md:w-[26rem] pl-1">
@@ -19,7 +19,7 @@ function Contact() {
       </div>
 
       {/* Content section: photo + form */}
-      <div className="flex flex-col md:flex-row gap-12 w-full max-w-5xl">
+      <div className="flex flex-col md:flex-row gap-12 w-full max-w-6xl mx-auto">
         
         {/* Left: Photo */}
         <div className="w-64 h-64 sm:w-80 sm:h-80 md:h-[28rem] md:w-[26rem] flex-shrink-0 flex">
@@ -63,7 +63,7 @@ function Contact() {
             />
             <button
               type="submit"
-              className="bg-primary text-bg px-6 py-3 rounded font-semibold hover:bg-primary/80 transition"
+              className="bg-primary text-background px-6 py-3 rounded-full font-semibold hover:bg-primary/80 transition"
             >
               Send Message
             </button>

@@ -20,3 +20,247 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: 96px;
+}
+
+.ambient-orb {
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  border-radius: 9999px;
+  filter: blur(88px);
+  opacity: 0.1;
+  will-change: transform;
+  animation: ambientFloat 26s ease-in-out infinite;
+}
+
+.ambient-orb-one {
+  width: 26rem;
+  height: 26rem;
+  left: -6rem;
+  top: 8%;
+  background: radial-gradient(circle at 35% 35%, rgba(92, 186, 208, 0.85) 0%, rgba(92, 186, 208, 0.12) 60%, transparent 75%);
+}
+
+.ambient-orb-two {
+  width: 22rem;
+  height: 22rem;
+  right: -4rem;
+  top: 30%;
+  background: radial-gradient(circle at 50% 50%, rgba(237, 223, 147, 0.78) 0%, rgba(237, 223, 147, 0.1) 60%, transparent 75%);
+  animation-delay: -6s;
+}
+
+.ambient-orb-three {
+  width: 20rem;
+  height: 20rem;
+  left: 18%;
+  top: 236vh;
+  background: radial-gradient(circle at 50% 50%, rgba(92, 186, 208, 0.72) 0%, rgba(92, 186, 208, 0.09) 58%, transparent 72%);
+  animation-delay: -12s;
+}
+
+.ambient-orb-four {
+  width: 22rem;
+  height: 22rem;
+  left: 8%;
+  top: 156vh;
+  background: radial-gradient(circle at 45% 45%, rgba(92, 186, 208, 0.74) 0%, rgba(92, 186, 208, 0.1) 60%, transparent 76%);
+  animation-delay: -4s;
+}
+
+.ambient-orb-five {
+  width: 18rem;
+  height: 18rem;
+  right: 8%;
+  top: 204vh;
+  background: radial-gradient(circle at 50% 50%, rgba(237, 223, 147, 0.68) 0%, rgba(237, 223, 147, 0.1) 58%, transparent 75%);
+  animation-delay: -9s;
+}
+
+.ambient-orb-six {
+  width: 20rem;
+  height: 20rem;
+  left: 40%;
+  top: 282vh;
+  background: radial-gradient(circle at 52% 48%, rgba(92, 186, 208, 0.68) 0%, rgba(92, 186, 208, 0.09) 57%, transparent 74%);
+  animation-delay: -14s;
+}
+
+.ambient-orb-seven {
+  width: 19rem;
+  height: 19rem;
+  left: 18%;
+  top: 344vh;
+  background: radial-gradient(circle at 50% 50%, rgba(92, 186, 208, 0.64) 0%, rgba(92, 186, 208, 0.08) 56%, transparent 74%);
+  animation-delay: -8s;
+}
+
+.ambient-orb-eight {
+  width: 17rem;
+  height: 17rem;
+  left: 14%;
+  top: 416vh;
+  background: radial-gradient(circle at 50% 50%, rgba(237, 223, 147, 0.62) 0%, rgba(237, 223, 147, 0.08) 58%, transparent 76%);
+  animation-delay: -11s;
+}
+
+.ambient-orb-nine {
+  width: 20rem;
+  height: 20rem;
+  left: 48%;
+  top: 488vh;
+  background: radial-gradient(circle at 48% 52%, rgba(92, 186, 208, 0.66) 0%, rgba(92, 186, 208, 0.09) 58%, transparent 75%);
+  animation-delay: -16s;
+}
+
+.ambient-orb-ten {
+  width: 18rem;
+  height: 18rem;
+  left: 12%;
+  top: 562vh;
+  background: radial-gradient(circle at 48% 52%, rgba(92, 186, 208, 0.62) 0%, rgba(92, 186, 208, 0.08) 58%, transparent 75%);
+  animation-delay: -6s;
+}
+
+.ambient-orb-eleven {
+  width: 16rem;
+  height: 16rem;
+  left: 22%;
+  top: 638vh;
+  background: radial-gradient(circle at 50% 50%, rgba(237, 223, 147, 0.58) 0%, rgba(237, 223, 147, 0.08) 58%, transparent 76%);
+  animation-delay: -13s;
+}
+
+.ambient-orb-twelve {
+  width: 18rem;
+  height: 18rem;
+  left: 36%;
+  top: 708vh;
+  background: radial-gradient(circle at 50% 50%, rgba(92, 186, 208, 0.6) 0%, rgba(92, 186, 208, 0.08) 58%, transparent 75%);
+  animation-delay: -10s;
+}
+
+.ambient-orb-thirteen {
+  width: 17rem;
+  height: 17rem;
+  left: 30%;
+  top: 782vh;
+  background: radial-gradient(circle at 50% 50%, rgba(237, 223, 147, 0.54) 0%, rgba(237, 223, 147, 0.08) 58%, transparent 76%);
+  animation-delay: -15s;
+}
+
+.ambient-orb-fourteen {
+  width: 19rem;
+  height: 19rem;
+  left: 6%;
+  top: 694vh;
+  background: radial-gradient(circle at 50% 50%, rgba(92, 186, 208, 0.62) 0%, rgba(92, 186, 208, 0.09) 58%, transparent 75%);
+  animation-delay: -18s;
+}
+
+.site-effects {
+  opacity: 0.56;
+}
+
+.site-particle {
+  position: absolute;
+  border-radius: 9999px;
+  background: rgba(223, 219, 223, 0.58);
+  box-shadow: 0 0 7px rgba(92, 186, 208, 0.44);
+  animation-name: siteParticleFloat;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.hero-animated-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  opacity: 0.18;
+  will-change: transform;
+  animation: heroGlowFloat 14s ease-in-out infinite;
+}
+
+.hero-glow-one {
+  width: 24rem;
+  height: 24rem;
+  left: -5rem;
+  top: 12%;
+  background: radial-gradient(circle at 35% 35%, rgba(92, 186, 208, 0.85) 0%, rgba(92, 186, 208, 0.08) 60%, transparent 75%);
+}
+
+.hero-glow-two {
+  width: 20rem;
+  height: 20rem;
+  right: -4rem;
+  bottom: 8%;
+  background: radial-gradient(circle at 50% 50%, rgba(237, 223, 147, 0.8) 0%, rgba(237, 223, 147, 0.08) 60%, transparent 75%);
+  animation-delay: -7s;
+}
+
+.hero-particle {
+  position: absolute;
+  border-radius: 9999px;
+  background: rgba(223, 219, 223, 0.55);
+  box-shadow: 0 0 6px rgba(92, 186, 208, 0.45);
+  animation-name: heroParticleFloat;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ambientFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.04);
+  }
+}
+
+@keyframes siteParticleFloat {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.12;
+  }
+  30% {
+    opacity: 0.34;
+  }
+  100% {
+    transform: translate3d(0, -70px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes heroGlowFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -16px, 0) scale(1.08);
+  }
+}
+
+@keyframes heroParticleFloat {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.12;
+  }
+  35% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate3d(0, -90px, 0);
+    opacity: 0;
+  }
+}
+
